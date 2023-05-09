@@ -1,5 +1,7 @@
 import { Head } from "@modules";
 import { Outlet } from "react-router-dom";
+import Footer from "../compounts/Footer";
+import Header from "../compounts/Header";
 
 export default function App() {
   return (
@@ -10,7 +12,9 @@ export default function App() {
         url="https://vitefilerouter.com"
         description="Remixer"
       />
+      <Header />
       <Outlet />
+      <Footer />
     </>
   );
 }
