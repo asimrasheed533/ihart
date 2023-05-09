@@ -2,6 +2,7 @@ import banner from "../assets/banner.png";
 import Bannermain from "../compounts/Bannermain";
 import Header from "../compounts/Header";
 import TraningCard from "../compounts/Traningcard";
+import ContectSection from "../compounts/ContectSection";
 export default function Index() {
   return (
     <>
@@ -349,6 +350,7 @@ export default function Index() {
           />
         </div>
       </div>
+      <ContectSection />
     </>
   );
 }
