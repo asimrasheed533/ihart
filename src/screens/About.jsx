@@ -11,9 +11,8 @@ export default function About() {
     <>
       <Bannermain
         banner={about}
-        heading="lore, lorem lorem "
-        subheading=" service global consultancy service offering total
-          health care solutions across the spectrum of healt"
+        heading="About Us"
+        subheading="Providing Innovative Healthcare Solutions for Safer, Better Care of all Patients."
       />
       <div className="about__contect__section">
         <div className="about__contect__section__heading">Our Focus</div>

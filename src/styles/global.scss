@@ -21,9 +21,11 @@ body {
   cursor: pointer;
 }
 .header__section {
+  // position: fixed;
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
+  background-color: #f1f3f2;
 }
 .header__logo {
   color: #121212;
@@ -41,11 +43,7 @@ body {
   justify-content: space-between;
   flex-direction: column;
   padding-top: 8px;
-  // position: fixed;
   z-index: 999;
-}
-.header__navbar__active {
-  background-color: $secondary;
 }
 .header__entries {
   width: 100%;
@@ -416,6 +414,164 @@ body {
   margin: 30px 0px;
   border-radius: 6px;
 }
+.scop__container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.scop__container__heading {
+  font-size: 30px;
+  font-weight: 600;
+  color: $primary;
+  margin-bottom: 12px;
+}
+.scop__wraper__main {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0em 3em;
+}
+.scop__wraper__main__entry span {
+  color: $primary;
+  font-size: 20px;
+  font-weight: 900;
+  margin-right: 18px;
+  position: relative;
+}
+.scop__wraper__main__entry {
+  margin: 10px 0px;
+}
+.scop__wraper__main__entry span::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  background-color: $secondary;
+  top: 6px;
+  left: -20px;
+}
+.our__range__container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.our__range__container__heading {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 30px;
+  font-weight: 600;
+  color: $primary;
+  margin-bottom: 12px;
+}
+.our__range__container__wraper {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px;
+}
+.our__range__container__wraper__card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f1f3f2;
+  border-radius: 9px;
+  flex: 1;
+}
+.our__range__card__heading {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  color: $secondary;
+  margin-bottom: 7px;
+  padding: 20px 18px;
+  text-align: center;
+}
+.our__range__card__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1em;
+  border-radius: 6px;
+  color: white;
+  margin: 2em;
+  background-color: $secondary;
+}
+.services__img__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2em 0em;
+}
+.solution__container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+.solution__text__wraper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.solution__text__wraper__heading {
+  font-size: 30px;
+  font-weight: 600;
+  color: $primary;
+  margin-bottom: 12px;
+}
+.solution__text__wraper__sub__heading {
+  color: #5a6163;
+  margin-bottom: 12px;
+}
+.solution__text__wraper__entry {
+  margin: 10px 0px;
+  font-size: 18px;
+  font-weight: 600;
+  color: $primary;
+  position: relative;
+}
+.solution__text__wraper__entry::before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: $secondary;
+  border-radius: 30px;
+  left: -22px;
+  top: 6px;
+}
 @media (max-width: 1200px) {
   .contect__contaier {
     flex-direction: column;
@@ -463,6 +619,12 @@ body {
   }
 }
 @media (max-width: 550px) {
+  .solution__text__wraper__heading {
+    font-size: 22px;
+  }
+  .solution__text__wraper__entry {
+    font-size: 16px;
+  }
   .about__contect__section__heading {
     font-size: 20px;
   }

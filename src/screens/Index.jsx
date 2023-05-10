@@ -8,9 +8,8 @@ export default function Index() {
     <>
       <Bannermain
         banner={banner}
-        heading="lore, lorem lorem "
-        subheading=" service global consultancy service offering total
-          health care solutions across the spectrum of healt"
+        heading="Reimagining Healthcare"
+        subheading="I-HART is dedicated to providing innovative and unique solutions to all sectors of the healthcare industry"
       />
       <div className="innovative__content__wraper">
         <div className="Innovative__heading">
