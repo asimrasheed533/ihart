@@ -25,7 +25,7 @@ body {
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  background-color: #f1f3f2;
+  background-color: #ffff;
 }
 .header__logo {
   color: #121212;
@@ -92,6 +92,12 @@ body {
   left: calc(-50% - 30px);
   display: none;
 }
+.header__navbar__link__dropdown__link {
+  text-decoration: none;
+  margin: 7px 0px;
+  color: $primary;
+  font-weight: 600;
+}
 .header__navbar__link {
   text-decoration: none;
   color: $primary;
@@ -132,6 +138,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0px 6px;
+}
+.header__upper__nav__entry__svg {
   margin: 0px 6px;
 }
 .banner__section {
@@ -198,6 +207,7 @@ body {
   line-height: 26px;
 }
 .training__card__container__main {
+  padding: 3em 0em;
   width: 100%;
   background-image: url(../assets/background.png);
 }
