@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Bannermain({ banner }) {
+export default function Bannermain({ banner, heading, subheading }) {
   return (
     <>
       <div className="banner__section">
@@ -9,12 +9,9 @@ export default function Bannermain({ banner }) {
             <img src={banner} alt="banner" />
           </div>
           <div className="banner__img__text__wraper">
-            <div className="banner__img__text__wraper__heading">
-              Reimagining Healthcare
-            </div>
+            <div className="banner__img__text__wraper__heading">{heading}</div>
             <div className="banner__img__text__wraper__sub__heading">
-              I-HART is dedicated to providing innovative and unique solutions
-              to all sectors of the healthcare industry
+              {subheading}
             </div>
           </div>
         </div>

@@ -6,7 +6,12 @@ import ContectSection from "../compounts/ContectSection";
 export default function Index() {
   return (
     <>
-      <Bannermain banner={banner} />
+      <Bannermain
+        banner={banner}
+        heading="lore, lorem lorem "
+        subheading=" service global consultancy service offering total
+          health care solutions across the spectrum of healt"
+      />
       <div className="innovative__content__wraper">
         <div className="Innovative__heading">
           Innovative and Unique Solutions

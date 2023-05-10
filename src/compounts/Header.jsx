@@ -1,8 +1,9 @@
 import React, { useLayoutEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ilogo from "../assets/ilogo.png";
 import ClickAwayListener from "react-click-away-listener";
 export default function Header() {
+  const navigate = useNavigate();
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
   function changeIsNavOpen() {
@@ -39,10 +40,24 @@ export default function Header() {
           <div className="header__upper__container">
             {isNavOpen ? (
               <div className="header__entries">
-                <Link className="header__navbar__link" to="/">
+                <Link
+                  className="header__navbar__link"
+                  to="/"
+                  onClick={() => {
+                    navigate("/");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   Home
                 </Link>
-                <Link className="header__navbar__link" to="/">
+                <Link
+                  className="header__navbar__link"
+                  to="/about"
+                  onClick={() => {
+                    navigate("/about");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   About Us
                 </Link>
                 <Link className="header__navbar__link" to="/">
