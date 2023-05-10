@@ -1,8 +1,9 @@
-import React from "react";
-import service from "../assets/service.png";
 import Bannermain from "../compounts/Bannermain";
-import servicesb from "../assets/servicesb.png";
 import ContectSection from "../compounts/ContectSection";
+import RangeCard from "../compounts/RangeCard";
+import service from "../assets/service.png";
+import servicesb from "../assets/servicesb.png";
+
 export default function Services() {
   return (
     <>
@@ -91,17 +92,5 @@ export default function Services() {
       </div>
       <ContectSection />
     </>
-  );
-}
-
-function RangeCard({ heading, subheadingone, subheadingtwo }) {
-  return (
-    <div className="our__range__container__wraper">
-      <div className="our__range__container__wraper__card">
-        <div className="our__range__card__heading">{heading}</div>
-        <div className="our__range__card__row">{subheadingone}</div>
-        <div className="our__range__card__row">{subheadingtwo}</div>
-      </div>
-    </div>
   );
 }

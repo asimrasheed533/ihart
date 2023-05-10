@@ -1,4 +1,3 @@
-import React from "react";
 import about from "../assets/about.png";
 import profit from "../assets/profit.png";
 import discovery from "../assets/discovery.png";

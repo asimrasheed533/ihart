@@ -1,8 +1,8 @@
-import banner from "../assets/banner.png";
 import Bannermain from "../compounts/Bannermain";
-import Header from "../compounts/Header";
-import TraningCard from "../compounts/Traningcard";
 import ContectSection from "../compounts/ContectSection";
+import TraningCard from "../compounts/Traningcard";
+import banner from "../assets/banner.png";
+
 export default function Index() {
   return (
     <>

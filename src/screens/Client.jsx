@@ -1,7 +1,13 @@
-import React from "react";
 import Bannermain from "../compounts/Bannermain";
-import client from "../assets/client.png";
+import ContectSection from "../compounts/ContectSection";
+import React from "react";
 import cl1 from "../assets/cl1.png";
+import cl10 from "../assets/cl10.png";
+import cl11 from "../assets/cl11.png";
+import cl12 from "../assets/cl12.png";
+import cl13 from "../assets/cl13.png";
+import cl14 from "../assets/cl14.png";
+import cl15 from "../assets/cl15.png";
 import cl2 from "../assets/cl2.png";
 import cl3 from "../assets/cl3.png";
 import cl4 from "../assets/cl4.png";
@@ -10,13 +16,8 @@ import cl6 from "../assets/cl6.png";
 import cl7 from "../assets/cl7.png";
 import cl8 from "../assets/cl8.png";
 import cl9 from "../assets/cl9.png";
-import cl10 from "../assets/cl10.png";
-import cl11 from "../assets/cl11.png";
-import cl12 from "../assets/cl12.png";
-import cl13 from "../assets/cl13.png";
-import cl14 from "../assets/cl14.png";
-import cl15 from "../assets/cl15.png";
-import ContectSection from "../compounts/ContectSection";
+import client from "../assets/client.png";
+
 export default function Client() {
   return (
     <>

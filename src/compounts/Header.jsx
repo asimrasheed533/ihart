@@ -1,11 +1,52 @@
-import React, { useLayoutEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import { useLayoutEffect, useState } from "react";
+
 import ilogo from "../assets/ilogo.png";
-import ClickAwayListener from "react-click-away-listener";
+
+const dropdown = [
+  {
+    label: "Traing & Development",
+    link: "/training",
+  },
+  {
+    label: "Consulting",
+    link: "/consulting",
+  },
+  {
+    label: "Staffing",
+    link: "/staffing",
+  },
+  {
+    label: "Traing & Development",
+    link: "/training",
+  },
+  {
+    label: "Consulting",
+    link: "/consulting",
+  },
+  {
+    label: "Staffing",
+    link: "/staffing",
+  },
+  {
+    label: "Traing & Development",
+    link: "/training",
+  },
+  {
+    label: "Consulting",
+    link: "/consulting",
+  },
+  {
+    label: "Staffing",
+    link: "/staffing",
+  },
+];
+
 export default function Header() {
   const navigate = useNavigate();
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
+
   function changeIsNavOpen() {
     if (window.innerWidth <= 950) {
       setIsNavOpen(false);
@@ -25,6 +66,7 @@ export default function Header() {
       }
     });
   }, []);
+
   return (
     <div className="header__section">
       <div
@@ -40,38 +82,36 @@ export default function Header() {
           <div className="header__upper__container">
             {isNavOpen ? (
               <div className="header__entries">
-                <Link
-                  className="header__navbar__link"
-                  to="/"
-                  onClick={() => {
-                    navigate("/");
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  }}
-                >
+                <NavLink end className="header__navbar__link" to="/">
                   Home
-                </Link>
-                <Link
-                  className="header__navbar__link"
-                  to="/about"
-                  onClick={() => {
-                    navigate("/about");
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  }}
-                >
+                </NavLink>
+                <NavLink className="header__navbar__link" to="/about">
                   About Us
-                </Link>
-                <Link className="header__navbar__link" to="/services">
+                </NavLink>
+                <NavLink className="header__navbar__link" to="/services">
                   Services
-                </Link>
-                <Link className="header__navbar__link" to="/solution">
-                  Solution
-                </Link>
-                <Link className="header__navbar__link" to="/client">
+                </NavLink>
+                <div className="header__navbar__link__parent">
+                  <NavLink className="header__navbar__link" to="/solution">
+                    Solution
+                  </NavLink>
+                  <div className="header__navbar__link__dropdown">
+                    {dropdown.map((item) => (
+                      <NavLink
+                        to={item.link}
+                        className="header__navbar__link__dropdown__link"
+                      >
+                        {item.label}
+                      </NavLink>
+                    ))}
+                  </div>
+                </div>
+                <NavLink className="header__navbar__link" to="/client">
                   Clients
-                </Link>
-                <Link className="header__navbar__link" to="/">
+                </NavLink>
+                <NavLink className="header__navbar__link" to="/contact">
                   Contact Us
-                </Link>
+                </NavLink>
               </div>
             ) : null}
             <div className="header__upper__nav__container">
