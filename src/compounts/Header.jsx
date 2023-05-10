@@ -66,7 +66,7 @@ export default function Header() {
                 <Link className="header__navbar__link" to="/solution">
                   Solution
                 </Link>
-                <Link className="header__navbar__link" to="/products">
+                <Link className="header__navbar__link" to="/client">
                   Clients
                 </Link>
                 <Link className="header__navbar__link" to="/">
