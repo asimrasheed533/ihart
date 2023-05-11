@@ -22,7 +22,7 @@ const dropdown = [
   },
   {
     label: "Research Infrastructure",
-    link: "/",
+    link: "/research",
   },
   {
     label: "Clinical Trials",
