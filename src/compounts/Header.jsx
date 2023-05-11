@@ -18,7 +18,7 @@ const dropdown = [
   },
   {
     label: "Clinical Training Programs",
-    link: "/training",
+    link: "/clinical",
   },
   {
     label: "Research Infrastructure",
