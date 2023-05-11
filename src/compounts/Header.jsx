@@ -34,7 +34,7 @@ const dropdown = [
   },
   {
     label: "CME/CPD Conferences",
-    link: "/",
+    link: "/conferences",
   },
   {
     label: "Executive Training Academy",
