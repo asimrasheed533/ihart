@@ -26,7 +26,7 @@ const dropdown = [
   },
   {
     label: "Clinical Trials",
-    link: "/",
+    link: "/clinicaltrials",
   },
   {
     label: "Enterprise QIPS Setup",
