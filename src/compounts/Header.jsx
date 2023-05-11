@@ -38,7 +38,7 @@ const dropdown = [
   },
   {
     label: "Executive Training Academy",
-    link: "/",
+    link: "/executive",
   },
 ];
 
