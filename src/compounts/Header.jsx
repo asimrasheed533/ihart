@@ -6,7 +6,7 @@ import ilogo from "../assets/ilogo.png";
 const dropdown = [
   {
     label: "Training in Quality & Safety",
-    link: "/",
+    link: "/traning",
   },
   {
     label: "Monitoring Patient Safety",

@@ -393,6 +393,7 @@ body {
 }
 .about__contect__section__sub__heading {
   line-height: 24px;
+  margin-bottom: 1em;
 }
 .solution__contect__section__sub__heading {
   line-height: 24px;
@@ -694,6 +695,30 @@ body {
   font-weight: 600;
   color: $primary;
   margin-bottom: 1em;
+}
+.traning__img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+.traning__img img {
+  height: 400px;
+  object-fit: cover;
+}
+.traning__content__section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2em 1em;
 }
 @media (max-width: 1200px) {
   .contect__contaier {

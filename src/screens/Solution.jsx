@@ -1,5 +1,6 @@
 import Bannermain from "../compounts/Bannermain";
 import solution from "../assets/solution.png";
+
 import ContectSection from "../compounts/ContectSection";
 
 export default function Solution() {
