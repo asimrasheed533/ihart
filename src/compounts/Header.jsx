@@ -10,7 +10,7 @@ const dropdown = [
   },
   {
     label: "Monitoring Patient Safety",
-    link: "/",
+    link: "/monitoring",
   },
   {
     label: "Reducing Variance",
