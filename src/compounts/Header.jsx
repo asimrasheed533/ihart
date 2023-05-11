@@ -14,7 +14,7 @@ const dropdown = [
   },
   {
     label: "Reducing Variance",
-    link: "/",
+    link: "/reducing",
   },
   {
     label: "Clinical Training Programs",
