@@ -30,7 +30,7 @@ const dropdown = [
   },
   {
     label: "Enterprise QIPS Setup",
-    link: "/",
+    link: "/enterprise",
   },
   {
     label: "CME/CPD Conferences",
