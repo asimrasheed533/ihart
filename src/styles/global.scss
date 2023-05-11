@@ -619,6 +619,21 @@ body {
   left: -22px;
   top: 6px;
 }
+.executive__text__wraper__entry {
+  margin: 10px 0px;
+  font-size: 16px;
+  position: relative;
+}
+.executive__text__wraper__entry::before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: $secondary;
+  border-radius: 30px;
+  left: -22px;
+  top: 6px;
+}
 .client__content__wraper {
   width: 100%;
   display: flex;
@@ -663,6 +678,22 @@ body {
 .client__img__container__img img:hover {
   transform: scale(1.2);
   transition: 0.3s ease-in-out;
+}
+.executives__container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+.executives__container__heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: $primary;
+  margin-bottom: 1em;
 }
 @media (max-width: 1200px) {
   .contect__contaier {

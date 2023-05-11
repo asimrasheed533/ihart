@@ -39,15 +39,101 @@ export default function Executive() {
           their home country. Each course is 2-4 weeks in duration, based on
           mutually identified needs and goals.
         </div>
-        <div className="solution__text__wraper__entry">
-          Setting Up Enterprise Quality Office Structure and Governance
+      </div>
+      <div className="executives__container">
+        <div className="executives__container__heading">Intended audience:</div>
+        <div className="about__contect__section__sub__heading__entry">
+          <span style={{ color: "red" }}>1: </span>
+          Presidents, Chief Executive Officers, other C-suite executives and
+          senior administrative personnel from across healthcare systems and
+          hospitals
         </div>
-        <div className="solution__text__wraper__entry">CME/CPD Conferences</div>
-        <div className="solution__text__wraper__entry">
-          Health Executives Academy for Leadership Support (HEALS) – a joint
-          partnership with AAH LLC
+        <div className="about__contect__section__sub__heading__entry">
+          <span style={{ color: "red" }}>2: </span>
+          Department directors of large-scale hospitals with development
+          potential and self-development willingness
+        </div>
+        <div className="about__contect__section__sub__heading__entry">
+          <span style={{ color: "red" }}>3: </span>
+          Other senior key staff in medical colleges, e.g. division heads,
+          institute directors, etc.
+        </div>
+        <div className="about__contect__section__sub__heading__entry">
+          <span style={{ color: "red" }}>4: </span>
+          Investors in medical and health industry
         </div>
       </div>
+      <div className="executives__container">
+        <div className="executives__container__heading">
+          Training locations:
+        </div>
+        <div className="about__contect__section__sub__heading__entry">
+          <span style={{ color: "red" }}>1: </span>
+          Baltimore-Washington Metropolitan areas, USA
+        </div>
+        <div className="about__contect__section__sub__heading__entry">
+          <span style={{ color: "red" }}>2: </span>
+          Other training sites in the US customized to special persons and group
+          upon mutual agreement
+        </div>
+        <div className="about__contect__section__sub__heading__entry">
+          <span style={{ color: "red" }}>3: </span>
+          Participants’ home country
+        </div>
+        For the US based courses, access to world class hospitals and site
+        visits are integrated into the schedule. For courses based in the home
+        country of participating organization, we will arrange discovery and
+        solutions development visits within their organization and other
+        organization based upon mutual agreements.
+      </div>
+      <div className="executives__container">
+        <div className="executives__container__heading">Teaching modes:</div>
+        Combination of class-room teaching, lectures, seminars, workshops,
+        on-site investigation and observation, meet-the-expert sessions, and
+        specialized exchanges.
+      </div>
+      <div className="executives__container">
+        <div className="executives__container__heading">
+          Proposed Training Curriculum:
+        </div>
+        The proposed curriculum will cover key concepts, knowledge, skills and
+        experiences needed to manage and lead modern hospitals in the 21st
+        century. These will include modules on the following types of issues:
+        <div className="executive__text__wraper__entry">Leadership traits</div>
+        <div className="executive__text__wraper__entry">
+          Clinical service development
+        </div>
+        <div className="executive__text__wraper__entry">
+          Hospital operations forecasting
+        </div>
+        <div className="executive__text__wraper__entry">
+          Reimbursement models
+        </div>
+        <div className="executive__text__wraper__entry">
+          Hospital operation management and strategies
+        </div>
+        <div className="executive__text__wraper__entry">
+          Hospital supply chain management
+        </div>
+        <div className="executive__text__wraper__entry">
+          Hospital human resource management
+        </div>
+        <div className="executive__text__wraper__entry">
+          Hospital brand strategies
+        </div>
+        <div className="executive__text__wraper__entry">
+          Hospital and social public welfare
+        </div>
+        <div className="executive__text__wraper__entry">
+          Managing Quality of Care
+        </div>
+        <div className="executive__text__wraper__entry">Patient Safety</div>
+        <div className="executive__text__wraper__entry">
+          Physician staffing models and engagement
+        </div>
+        <div className="executive__text__wraper__entry">Case studies</div>
+      </div>
+
       <ContectSection />
     </>
   );
