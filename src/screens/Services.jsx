@@ -75,6 +75,7 @@ export default function Services() {
           heading="Education & Training Support"
           subheadingone="Clinical & Post Graduate Program Development"
           subheadingtwo="CME/CPD Programs"
+          styles="#035294"
         />
         <RangeCard
           heading="Healthcare Operations & Management"
@@ -85,6 +86,7 @@ export default function Services() {
           heading="Research Structure & Governance"
           subheadingone="Clinical & Translational Research Setup"
           subheadingtwo="Ethics and Regulation of Research"
+          styles="#035294"
         />
       </div>
       <div className="services__img__container">
