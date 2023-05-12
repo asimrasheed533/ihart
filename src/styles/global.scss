@@ -665,20 +665,23 @@ body {
   margin: 0 auto;
 }
 .client__img__container__img {
-  width: 18%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 16px;
   cursor: pointer;
   border: 1px solid #f1f3f2;
   border-radius: 5px;
+}
+.client__img__container__img img {
+  width: 100%;
   transition: 0.3s ease-in-out;
 }
 .client__img__container__img img:hover {
-  transform: scale(1.2);
-  transition: 0.3s ease-in-out;
+  transform: scale(1.6);
+  transition: 0.5s ease-in-out;
 }
 .executives__container {
   width: 100%;
@@ -805,7 +808,7 @@ body {
     align-items: flex-start;
   }
   .contect__contaier__col {
-    width: 80%;
+    width: 100%;
   }
   .banner__img__text__wraper {
     width: 90%;
