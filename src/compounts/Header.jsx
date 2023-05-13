@@ -155,6 +155,9 @@ export default function Header() {
                     ))}
                   </div>
                 </div>
+                <NavLink className="header__navbar__link" to="/publications">
+                  Publications
+                </NavLink>
                 <NavLink className="header__navbar__link" to="/client">
                   Clients
                 </NavLink>

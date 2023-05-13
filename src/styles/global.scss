@@ -831,6 +831,63 @@ body {
   color: #0e7bd4;
   margin: 12px 0px;
 }
+.blog__card__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2em 3em;
+}
+.blog__card__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.blog__card__wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f1f3f2;
+  margin: 1em;
+  padding: 0em 1em;
+  width: 300px;
+  transition: 0.3s ease-in-out;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.blog__card__wraper:hover {
+  background-color: $primary;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.blog__card__wraper__img img {
+  height: 180px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.blog__card__wraper__heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  margin: 5px 0px;
+}
+.blog__card__wraper__sub__heading {
+  font-size: 16px;
+  color: #8e9394;
+  margin: 12px 0px;
+}
+.blog__card__wraper__text {
+  text-align: center;
+  margin-top: 9px;
+  width: 90%;
+  padding: 0.4em 0em;
+}
 @media (max-width: 1200px) {
   .banner__img__text__wraper {
     height: 230px;
