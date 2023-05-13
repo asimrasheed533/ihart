@@ -41,7 +41,30 @@ const dropdown = [
     link: "/executive",
   },
 ];
-
+const aboutdrop = [
+  {
+    label: "Introduction",
+    link: "introduction",
+  },
+  {
+    label: "Value",
+    link: "value",
+  },
+  {
+    label: "Our Team",
+    link: "team",
+  },
+];
+const servicesdrop = [
+  {
+    label: "Scopoe",
+    link: "/scope",
+  },
+  {
+    label: "Range of Services",
+    link: "/range",
+  },
+];
 export default function Header() {
   const navigate = useNavigate();
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -85,12 +108,38 @@ export default function Header() {
                 <NavLink end className="header__navbar__link" to="/">
                   Home
                 </NavLink>
-                <NavLink className="header__navbar__link" to="/about">
-                  About Us
-                </NavLink>
-                <NavLink className="header__navbar__link" to="/services">
-                  Services
-                </NavLink>
+                <div className="header__navbar__link__parent">
+                  <NavLink className="header__navbar__link" to="/about">
+                    About Us
+                  </NavLink>
+
+                  <div className="header__navbar__link__dropdown">
+                    {aboutdrop.map((item) => (
+                      <a
+                        href="introduction"
+                        to={item.link}
+                        className="header__navbar__link__dropdown__link"
+                      >
+                        {item.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+                <div className="header__navbar__link__parent">
+                  <NavLink className="header__navbar__link" to="/services">
+                    Services
+                  </NavLink>
+                  <div className="header__navbar__link__dropdown">
+                    {servicesdrop.map((item) => (
+                      <NavLink
+                        to={item.link}
+                        className="header__navbar__link__dropdown__link"
+                      >
+                        {item.label}
+                      </NavLink>
+                    ))}
+                  </div>
+                </div>
                 <div className="header__navbar__link__parent">
                   <NavLink className="header__navbar__link" to="/solution">
                     Solution
@@ -163,6 +212,36 @@ export default function Header() {
                 </div>
                 <div className="header__upper__nav__entry__text">
                   info@ihartglobal.org
+                </div>
+              </div>
+              <div className="header__upper__nav__entry">
+                <input
+                  type="text"
+                  className="header__upper__nav__entry__text__input"
+                />
+                <div className="header__upper__nav__entry__svg">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.8333 36.1667C28.4063 36.1667 36.1667 28.4063 36.1667 18.8333C36.1667 9.2604 28.4063 1.5 18.8333 1.5C9.2604 1.5 1.5 9.2604 1.5 18.8333C1.5 28.4063 9.2604 36.1667 18.8333 36.1667Z"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M40.5002 40.5002L31.0752 31.0752"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>

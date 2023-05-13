@@ -13,7 +13,7 @@ export default function About() {
         heading="About Us"
         subheading="Providing Innovative Healthcare Solutions for Safer, Better Care of all Patients."
       />
-      <div className="about__contect__section">
+      <div className="about__contect__section" id="introduction">
         <div className="about__contect__section__heading">Our Focus</div>
         <div className="about__contect__section__sub__heading">
           I-HART responds to the growing health care challenges around the world
@@ -104,6 +104,7 @@ export default function About() {
           <img src={md} alt="image" />
           <div className="about__md__heading">Fauzia Anjum Vohra</div>
           <div className="about__md__sub__heading">Managing Director</div>
+          <div className="about__md__learn">Read More</div>
         </div>
       </div>
       <ContectSection />

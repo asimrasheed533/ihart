@@ -3,7 +3,7 @@
 *::before {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Inter", sans-serif;
+  font-family: "PT Serif", serif;
 }
 $primary: #025294;
 $secondary: #e24149;
@@ -60,10 +60,9 @@ body {
 }
 .header__navbar__link__wraper .active {
   background-color: $secondary;
-  color: rgb(221, 215, 215);
+  color: white;
   padding: 12px;
   border-radius: 8px;
-  transition: 0.3s ease-in-out;
   font-weight: 600;
 }
 .header__navbar__link__parent {
@@ -83,10 +82,11 @@ body {
 .header__navbar__link__dropdown {
   display: flex;
   padding: 2em;
-  border-radius: 10px;
+  border-radius: 5px;
   flex-direction: column;
+  align-items: center;
   position: absolute;
-  top: 50px;
+  top: 40px;
   background-color: white;
   width: 300px;
   left: calc(-50% - 30px);
@@ -94,14 +94,17 @@ body {
 }
 .header__navbar__link__dropdown__link {
   text-decoration: none;
-  margin: 12px 0px;
+  margin: 2px 0px;
   color: $primary;
-  font-weight: 600;
-  transition: 0.3s ease-in-out;
+  font-weight: 400;
+  transition: 0.1s ease-in-out;
+  padding: 12px 10px;
+  cursor: pointer;
 }
 .header__navbar__link__dropdown__link:hover {
-  color: $secondary;
-  transition: 0.3s ease-in-out;
+  background-color: $secondary;
+  color: white;
+  transition: 0.1s ease-in-out;
 }
 .header__navbar__link {
   text-decoration: none;
@@ -115,7 +118,7 @@ body {
 }
 .header__navbar__link:hover {
   background-color: $secondary;
-  color: rgb(221, 215, 215);
+  color: white;
   padding: 12px;
   border-radius: 8px;
   transition: 0.3s ease-in-out;
@@ -143,10 +146,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 6px;
+  margin: 7px 12px;
 }
 .header__upper__nav__entry__svg {
   margin: 0px 6px;
+}
+.header__upper__nav__entry__svg svg {
+  color: $secondary;
+}
+.header__upper__nav__entry__text__input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
 }
 .banner__section {
   background-color: $primary;
@@ -162,11 +173,11 @@ body {
 }
 .banner__img {
   width: 100%;
-  // height: 403px;
+  height: 400px;
 }
 .banner__img img {
   width: 100%;
-  height: 400px;
+  height: 402px;
   object-fit: cover;
 }
 .banner__img__text__wraper {
@@ -197,7 +208,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 1366px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-top: 3em;
   margin-bottom: 3em;
@@ -212,7 +223,9 @@ body {
   font-size: 18px;
   text-align: center;
   margin: 12px;
+  font-weight: lighter;
   line-height: 26px;
+  color: #5a6163;
 }
 .training__card__container__main {
   padding: 3em 0em;
@@ -225,11 +238,11 @@ body {
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1366px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 .traning__card__text__wraper {
-  width: 32%;
+  width: 28%;
   min-width: 300px;
   min-height: 340px;
   display: flex;
@@ -252,19 +265,19 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .training__card__svg svg {
   height: 60px;
 }
 .training__card__heading {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   margin: 12px;
 }
 .traning__card__contect {
   font-size: 16px;
-  margin: 12px;
+  margin: 12px 0px;
   line-height: 22px;
 }
 .traning__card__btn {
@@ -313,8 +326,7 @@ body {
   justify-content: center;
   max-width: 1366px;
   margin: 0 auto;
-
-  max-width: 1366px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 .contect__contaier__col {
@@ -390,7 +402,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   margin-top: 2em;
   margin-bottom: 2em;
@@ -433,10 +445,10 @@ body {
 .about__md {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
-  max-width: 1366px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-top: 2em;
   margin-bottom: 2em;
@@ -446,7 +458,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #c4c4c4;
+  background-color: #e9e2e2;
   padding: 1em;
 }
 .about__md__img img {
@@ -460,6 +472,14 @@ body {
 }
 .about__md__sub__heading {
   color: #5a6163;
+}
+.about__md__learn {
+  background-color: $primary;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin: 12px 0px;
+  cursor: pointer;
 }
 .btn__md__more {
   width: 100%;
@@ -499,7 +519,7 @@ body {
   justify-content: space-between;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0em 3em;
+  padding: 2em 3em;
 }
 .scop__wraper__main__entry span {
   color: $primary;
@@ -510,6 +530,10 @@ body {
 }
 .scop__wraper__main__entry {
   margin: 10px 0px;
+  color: #5a6163;
+}
+.scop__container__sub__heading {
+  color: #5a6163;
 }
 .scop__wraper__main__entry span::before {
   position: absolute;
@@ -527,7 +551,7 @@ body {
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .our__range__container__heading {
@@ -540,30 +564,30 @@ body {
   font-weight: 600;
   color: $primary;
   margin-bottom: 12px;
+  padding: 0em 1.4em;
 }
 .our__range__container__wraper {
-  width: 18%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 12px;
 }
 .our__range__container__wraper__card {
-  width: 100%;
+  width: 200px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   background-color: #f1f3f2;
   border-radius: 9px;
   flex: 1;
+  min-height: 430px;
 }
 .our__range__card__heading {
   width: 100%;
   font-size: 18px;
   font-weight: 600;
   color: $secondary;
-  margin-bottom: 7px;
   padding: 20px 18px;
   text-align: center;
 }
@@ -574,9 +598,10 @@ body {
   flex-direction: column;
   text-align: center;
   padding: 1em;
+  min-height: 140px;
   border-radius: 6px;
   color: white;
-  margin: 2em;
+  margin: 0.3em 1em;
   background-color: $secondary;
 }
 .services__img__container {
@@ -596,7 +621,7 @@ body {
   flex-direction: column;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 2em 1em;
+  padding: 2em;
 }
 .solution__text__wraper {
   width: 100%;
@@ -621,6 +646,7 @@ body {
   font-weight: 600;
   color: $primary;
   position: relative;
+  text-decoration: none;
 }
 .solution__text__wraper__entry::before {
   position: absolute;
@@ -675,6 +701,7 @@ body {
   justify-content: space-evenly;
   max-width: 1300px;
   margin: 0 auto;
+  padding: 2em 0em;
 }
 .client__img__container__img {
   display: flex;
@@ -688,6 +715,7 @@ body {
   border-radius: 5px;
 }
 .client__img__container__img img {
+  height: 150px;
   width: 100%;
   transition: 0.3s ease-in-out;
 }
@@ -703,7 +731,7 @@ body {
   flex-direction: column;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 2em 1em;
+  padding: 2em;
 }
 .executives__container__heading {
   font-size: 20px;
@@ -804,6 +832,9 @@ body {
   margin: 12px 0px;
 }
 @media (max-width: 1200px) {
+  .banner__img__text__wraper {
+    height: 230px;
+  }
   .contect__contaier {
     flex-direction: column;
   }
@@ -815,9 +846,6 @@ body {
   }
 }
 @media (max-width: 950px) {
-  // .banner__img__text__wraper {
-  //   height: auto;
-  // }
   .footer__container__row {
     flex-direction: column;
     align-items: flex-start;
@@ -827,6 +855,7 @@ body {
   }
   .banner__img__text__wraper {
     width: 90%;
+    height: 230px;
   }
   .header__upper__nav__container {
     display: none;
@@ -875,7 +904,7 @@ body {
     font-size: 18px;
   }
   .solution__text__wraper__heading {
-    font-size: 22px;
+    font-size: 20px;
   }
   .solution__text__wraper__entry {
     font-size: 16px;
@@ -904,6 +933,15 @@ body {
   }
 }
 @media (max-width: 700px) {
+  .solution__text__wraper__heading {
+    font-size: 24px;
+  }
+  .Innovative__heading {
+    font-size: 24px;
+  }
+  .Innovative__heading__sub {
+    font-size: 16px;
+  }
   .reducing__contact__container__row {
     flex-direction: column;
   }

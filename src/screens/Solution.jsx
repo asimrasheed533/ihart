@@ -2,6 +2,7 @@ import Bannermain from "../compounts/Bannermain";
 import solution from "../assets/solution.png";
 
 import ContectSection from "../compounts/ContectSection";
+import { Link } from "react-router-dom";
 
 export default function Solution() {
   return (
@@ -20,29 +21,34 @@ export default function Solution() {
             Please click on the links below to find out more
           </div>
         </div>
-        <div className="solution__text__wraper__entry">
+        <Link to="/traning" className="solution__text__wraper__entry">
+          Training in Quality Improvement and Patient Safety in Healthcare
+        </Link>
+        <Link to="/monitoring" className="solution__text__wraper__entry">
           Monitoring Patient Safety
-        </div>
-        <div className="solution__text__wraper__entry">
+        </Link>
+        <Link to="/reducing" className="solution__text__wraper__entry">
           Reducing Variance in Care Delivery
-        </div>
-        <div className="solution__text__wraper__entry">
+        </Link>
+        <Link to="/clinical" className="solution__text__wraper__entry">
           Upgrading Post Graduate Training Programs
-        </div>
-        <div className="solution__text__wraper__entry">
+        </Link>
+        <Link to="/research" className="solution__text__wraper__entry">
           Research Infrastructure and Governance
-        </div>
-        <div className="solution__text__wraper__entry">
+        </Link>
+        <Link className="solution__text__wraper__entry">
           Clinical Trials Infrastructure
-        </div>
-        <div className="solution__text__wraper__entry">
+        </Link>
+        <Link to="/enterprise" className="solution__text__wraper__entry">
           Setting Up Enterprise Quality Office Structure and Governance
-        </div>
-        <div className="solution__text__wraper__entry">CME/CPD Conferences</div>
-        <div className="solution__text__wraper__entry">
+        </Link>
+        <Link to="/conferences" className="solution__text__wraper__entry">
+          CME/CPD Conferences
+        </Link>
+        <Link to="/executive" className="solution__text__wraper__entry">
           Health Executives Academy for Leadership Support (HEALS) – a joint
           partnership with AAH LLC
-        </div>
+        </Link>
       </div>
       <ContectSection />
     </>

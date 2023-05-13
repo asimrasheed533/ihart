@@ -12,15 +12,14 @@ export default function Services() {
         heading="Our Services"
         subheading="Providing Innovative Healthcare Solutions for Safer, Better Care of all Patients."
       />
-      <div className="scop__container">
+
+      <div className="scop__wraper__main">
         <div className="scop__container__heading">Scop</div>
         <div className="scop__container__sub__heading">
           I-HART offers customized services across the entire health care
           spectrum – each offering caters to the specific needs of our clients –
           including
         </div>
-      </div>
-      <div className="scop__wraper__main">
         <div className="scop__wraper__main__entry">
           <span>Quality improvement and patient safety: </span>providing
           comprehensive solutions for continuous quality improvement and
@@ -57,7 +56,7 @@ export default function Services() {
           Accreditation Council for Graduate Medical Education International,
           and other similar organizations
         </div>
-        <div className="scop__wraper__main__entry">
+        <div className="scop__wraper__main__entry" style={{ fontSize: "18px" }}>
           We provide full-service, turnkey solutions, from design to
           implementation to monitoring and post-implementation evaluation.
         </div>
@@ -90,7 +89,7 @@ export default function Services() {
         />
       </div>
       <div className="services__img__container">
-        <img src={servicesb} alt="" />
+        <img src={servicesb} alt="services" />
       </div>
       <ContectSection />
     </>
