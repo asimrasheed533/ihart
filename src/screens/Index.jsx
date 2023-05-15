@@ -2,6 +2,7 @@ import Bannermain from "../compounts/Bannermain";
 import ContectSection from "../compounts/ContectSection";
 import TraningCard from "../compounts/Traningcard";
 import banner from "../assets/banner.png";
+import "animate.css";
 
 export default function Index() {
   return (
@@ -30,7 +31,13 @@ export default function Index() {
         </div>
       </div>
       <div className="training__card__container__main">
-        <div className="training__card__container">
+        <div
+          className="training__card__container"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
           <TraningCard
             svg={
               <svg

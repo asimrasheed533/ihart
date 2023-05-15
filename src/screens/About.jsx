@@ -15,7 +15,7 @@ export default function About() {
         heading="About Us"
         subheading="Providing Innovative Healthcare Solutions for Safer, Better Care of all Patients."
       />
-      <div className="about__contect__section" id="introduction">
+      <section className="about__contect__section" id="introduction">
         <div className="about__contect__section__heading">Our Focus</div>
         <div className="about__contect__section__sub__heading">
           I-HART responds to the growing health care challenges around the world
@@ -24,8 +24,8 @@ export default function About() {
           strategic challenges, technical problems, data needs, and evidence
           generation for quality improvement or health care reform.
         </div>
-      </div>
-      <div className="about__contect__section">
+      </section>
+      <section className="about__contect__section" id="value">
         <div className="about__contect__section__heading">
           Value Proposition
         </div>
@@ -38,7 +38,7 @@ export default function About() {
           <span style={{ color: "red" }}> P R O F I T</span> from our novel and
           visionary solutions.
         </div>
-      </div>
+      </section>
       <div className="profit__img">
         <img src={profit} alt="profit" />
       </div>
@@ -75,7 +75,7 @@ export default function About() {
       <div className="profit__img">
         <img src={discovery} alt="profit" />
       </div>
-      <div className="about__contect__section">
+      <section className="about__contect__section" id="team">
         <div className="about__contect__section__heading">
           The Team Experts in their fields
         </div>
@@ -100,7 +100,7 @@ export default function About() {
           close association with our partner and tailor our solutions to the
           unique needs and settings of our partners.
         </div>
-      </div>
+      </section>
       <div className="about__md">
         <div className="about__md__img">
           <img src={mdimg} alt="image" />

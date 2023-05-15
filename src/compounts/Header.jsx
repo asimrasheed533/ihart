@@ -44,10 +44,10 @@ const dropdown = [
 const aboutdrop = [
   {
     label: "Introduction",
-    link: "/introduction",
+    link: "introduction",
   },
   {
-    label: "Value",
+    label: "Value Proposition",
     link: "value",
   },
   {
@@ -58,11 +58,11 @@ const aboutdrop = [
 const servicesdrop = [
   {
     label: "Scopoe",
-    link: "/scope",
+    link: "scope",
   },
   {
     label: "Range of Services",
-    link: "/range",
+    link: "range",
   },
 ];
 export default function Header() {
@@ -115,13 +115,17 @@ export default function Header() {
 
                   <div className="header__navbar__link__dropdown">
                     {aboutdrop.map((item) => (
-                      <a
-                        href="introduction"
-                        to={item.link}
+                      <Link
+                        to="/about"
+                        onClick={() =>
+                          setTimeout(() => {
+                            document.getElementById(item.link).scrollIntoView();
+                          }, 100)
+                        }
                         className="header__navbar__link__dropdown__link"
                       >
                         {item.label}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -131,12 +135,17 @@ export default function Header() {
                   </NavLink>
                   <div className="header__navbar__link__dropdown">
                     {servicesdrop.map((item) => (
-                      <NavLink
-                        to={item.link}
+                      <Link
+                        to="/services"
                         className="header__navbar__link__dropdown__link"
+                        onClick={() =>
+                          setTimeout(() => {
+                            document.getElementById(item.link).scrollIntoView();
+                          }, 100)
+                        }
                       >
                         {item.label}
-                      </NavLink>
+                      </Link>
                     ))}
                   </div>
                 </div>

@@ -13,7 +13,7 @@ export default function Services() {
         subheading="Providing Innovative Healthcare Solutions for Safer, Better Care of all Patients."
       />
 
-      <div className="scop__wraper__main">
+      <section className="scop__wraper__main" id="scope">
         <div className="scop__container__heading">Scope</div>
         <div className="scop__container__sub__heading">
           I-HART offers customized services across the entire health care
@@ -60,10 +60,10 @@ export default function Services() {
           We provide full-service, turnkey solutions, from design to
           implementation to monitoring and post-implementation evaluation.
         </div>
-      </div>
-      <div className="our__range__container__heading">
+      </section>
+      <section className="our__range__container__heading" id="range">
         Our range of services include:
-      </div>
+      </section>
       <div className="our__range__container">
         <RangeCard
           heading="Quality & Patient Safety Solutions"
