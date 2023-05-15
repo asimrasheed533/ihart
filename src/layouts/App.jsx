@@ -1,7 +1,8 @@
-import { Head } from "@modules";
-import { Outlet } from "react-router-dom";
+import ContectSection from "../compounts/ContectSection";
 import Footer from "../compounts/Footer";
+import { Head } from "@modules";
 import Header from "../compounts/Header";
+import { Outlet } from "react-router-dom";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       />
       <Header />
       <Outlet />
+      <ContectSection />
       <Footer />
     </>
   );

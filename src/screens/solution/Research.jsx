@@ -1,16 +1,8 @@
-import React from "react";
-import Bannermain from "../compounts/Bannermain";
-import solution from "../assets/solution.png";
-import rearchimg from "../assets/rearchimg.png";
-import ContectSection from "../compounts/ContectSection";
+import rearchimg from "../../assets/rearchimg.png";
+
 export default function Research() {
   return (
     <>
-      <Bannermain
-        banner={solution}
-        heading="Solutions"
-        subheading="Quality healthcare should be Effective, Expedient, Error-free and Efficient."
-      />
       <div className="about__contect__section">
         <div className="about__contect__section__heading">
           Research Infrastructure and Governance
@@ -57,7 +49,6 @@ export default function Research() {
           and Monitoring Boards, and Adverse Events Monitoring Systems.
         </div>
       </div>
-      <ContectSection />
     </>
   );
 }

@@ -1,18 +1,9 @@
-import React from "react";
-import Bannermain from "../compounts/Bannermain";
-import solution from "../assets/solution.png";
-import tredflow from "../assets/tredflow.png";
-import clinflow from "../assets/clinflow.png";
+import clinflow from "../../assets/clinflow.png";
+import tredflow from "../../assets/tredflow.png";
 
-import ContectSection from "../compounts/ContectSection";
 export default function ClinicalTrials() {
   return (
     <>
-      <Bannermain
-        banner={solution}
-        heading="Solutions"
-        subheading="Quality healthcare should be Effective, Expedient, Error-free and Efficient."
-      />
       <div className="about__contect__section">
         <div className="about__contect__section__heading">
           Clinical Trials Infrastructure
@@ -53,7 +44,6 @@ export default function ClinicalTrials() {
           safe conduct of research studies.
         </div>
       </div>
-      <ContectSection />
     </>
   );
 }

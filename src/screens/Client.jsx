@@ -1,6 +1,4 @@
 import Bannermain from "../compounts/Bannermain";
-import ContectSection from "../compounts/ContectSection";
-import React from "react";
 import cl1 from "../assets/cl1.png";
 import cl10 from "../assets/cl10.png";
 import cl11 from "../assets/cl11.png";
@@ -82,7 +80,6 @@ export default function Client() {
           <img src={cl15} alt="clients" />
         </div>
       </div>
-      <ContectSection />
     </>
   );
 }

@@ -1,16 +1,10 @@
-import React from "react";
-import Bannermain from "../compounts/Bannermain";
-import solution from "../assets/solution.png";
-import quilty from "../assets/quilty.png";
-import ContectSection from "../compounts/ContectSection";
+import Bannermain from "../../compounts/Bannermain";
+import quilty from "../../assets/quilty.png";
+import solution from "../../assets/solution.png";
+
 export default function Research() {
   return (
     <>
-      <Bannermain
-        banner={solution}
-        heading="Solutions"
-        subheading="Quality healthcare should be Effective, Expedient, Error-free and Efficient."
-      />
       <div className="about__contect__section">
         <div className="about__contect__section__heading">
           Setting Up Enterprise Quality Office Structure and Governance
@@ -77,7 +71,6 @@ export default function Research() {
           for successful creation of such department.
         </div>
       </div>
-      <ContectSection />
     </>
   );
 }

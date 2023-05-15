@@ -1,16 +1,8 @@
-import React from "react";
-import Bannermain from "../compounts/Bannermain";
-import solution from "../assets/solution.png";
-import reducing from "../assets/reducing.png";
-import ContectSection from "../compounts/ContectSection";
+import reducing from "../../assets/reducing.png";
+
 export default function Reducing() {
   return (
     <>
-      <Bannermain
-        banner={solution}
-        heading="Solutions"
-        subheading="Quality healthcare should be Effective, Expedient, Error-free and Efficient."
-      />
       <div className="solution__container">
         <div className="solution__text__wraper">
           <div className="solution__text__wraper__heading">
@@ -122,7 +114,6 @@ export default function Reducing() {
           </div>
         </div>
       </div>
-      <ContectSection />
     </>
   );
 }

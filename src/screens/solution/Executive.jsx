@@ -1,15 +1,6 @@
-import React from "react";
-import solution from "../assets/solution.png";
-import Bannermain from "../compounts/Bannermain";
-import ContectSection from "../compounts/ContectSection";
 export default function Executive() {
   return (
     <>
-      <Bannermain
-        banner={solution}
-        heading="Solutions"
-        subheading="Quality healthcare should be Effective, Expedient, Error-free and Efficient."
-      />
       <div className="solution__container">
         <div className="solution__text__wraper">
           <div className="solution__text__wraper__heading">
@@ -133,8 +124,6 @@ export default function Executive() {
         </div>
         <div className="executive__text__wraper__entry">Case studies</div>
       </div>
-
-      <ContectSection />
     </>
   );
 }

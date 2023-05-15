@@ -1,16 +1,8 @@
-import React from "react";
-import Bannermain from "../compounts/Bannermain";
-import solution from "../assets/solution.png";
-import monitoringimg from "../assets/monitoringimg.png";
-import ContectSection from "../compounts/ContectSection";
+import monitoringimg from "../../assets/monitoringimg.png";
+
 export default function monitoring() {
   return (
     <>
-      <Bannermain
-        banner={solution}
-        heading="Solutions"
-        subheading="Quality healthcare should be Effective, Expedient, Error-free and Efficient."
-      />
       <div className="about__contect__section">
         <div className="about__contect__section__heading">
           Monitoring Patient Safety
@@ -51,7 +43,6 @@ export default function monitoring() {
       <div className="traning__img">
         <img src={monitoringimg} alt="traning" />
       </div>
-      <ContectSection />
     </>
   );
 }

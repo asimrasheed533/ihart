@@ -1,8 +1,8 @@
+import "animate.css";
+
 import Bannermain from "../compounts/Bannermain";
-import ContectSection from "../compounts/ContectSection";
 import TraningCard from "../compounts/Traningcard";
 import banner from "../assets/banner.png";
-import "animate.css";
 
 export default function Index() {
   return (
@@ -362,7 +362,6 @@ export default function Index() {
           />
         </div>
       </div>
-      <ContectSection />
     </>
   );
 }

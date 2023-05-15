@@ -1,16 +1,8 @@
-import React from "react";
-import Bannermain from "../compounts/Bannermain";
-import solution from "../assets/solution.png";
-import clinicalimg from "../assets/clinicalimg.png";
-import ContectSection from "../compounts/ContectSection";
+import clinicalimg from "../../assets/clinicalimg.png";
+
 export default function Clinical() {
   return (
     <>
-      <Bannermain
-        banner={solution}
-        heading="Solutions"
-        subheading="Quality healthcare should be Effective, Expedient, Error-free and Efficient."
-      />
       <div className="about__contect__section">
         <div className="about__contect__section__heading">
           Upgrading Post Graduate Training Programs
@@ -52,7 +44,6 @@ export default function Clinical() {
           the need and desire of the organization.
         </div>
       </div>
-      <ContectSection />
     </>
   );
 }

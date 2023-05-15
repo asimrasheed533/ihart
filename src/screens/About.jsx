@@ -1,10 +1,9 @@
+import Bannermain from "../compounts/Bannermain";
 import about from "../assets/about.png";
-import { useState } from "react";
-import profit from "../assets/profit.png";
 import discovery from "../assets/discovery.png";
 import mdimg from "../assets/mdimg.png";
-import Bannermain from "../compounts/Bannermain";
-import ContectSection from "../compounts/ContectSection";
+import profit from "../assets/profit.png";
+import { useState } from "react";
 
 export default function About() {
   const [isOpen, setIsOpen] = useState();
@@ -169,8 +168,6 @@ export default function About() {
           </div>
         </div>
       )}
-
-      <ContectSection />
     </>
   );
 }

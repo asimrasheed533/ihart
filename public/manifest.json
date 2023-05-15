@@ -4,7 +4,7 @@
   "start_url": "The URL that should be loaded when your application is opened",
   "display": "standalone",
   "description": "A description for your application",
-  "lang": " The default language of your application",
+  "lang": "The default language of your application",
   "dir": "auto",
   "theme_color": "#000000",
   "background_color": "#000000",
@@ -34,7 +34,7 @@
   "related_applications": [
     {
       "platform": "windows",
-      "url": " The URL to your app in that app store"
+      "url": "The URL to your app in that app store"
     }
   ],
   "prefer_related_applications": false,

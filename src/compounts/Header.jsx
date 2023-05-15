@@ -57,7 +57,7 @@ const aboutdrop = [
 ];
 const servicesdrop = [
   {
-    label: "Scopoe",
+    label: "Scope",
     link: "scope",
   },
   {
@@ -77,7 +77,6 @@ export default function Header() {
       setIsNavOpen(true);
     }
   }
-
   useLayoutEffect(() => {
     changeIsNavOpen();
     window.addEventListener("resize", changeIsNavOpen);
@@ -156,7 +155,7 @@ export default function Header() {
                   <div className="header__navbar__link__dropdown">
                     {dropdown.map((item) => (
                       <NavLink
-                        to={item.link}
+                        to={"/solution" + item.link}
                         className="header__navbar__link__dropdown__link"
                       >
                         {item.label}
@@ -224,36 +223,6 @@ export default function Header() {
                 </Link>
                 <div className="header__upper__nav__entry__text">
                   info@ihartglobal.org
-                </div>
-              </div>
-              <div className="header__upper__nav__entry">
-                <input
-                  type="text"
-                  className="header__upper__nav__entry__text__input"
-                />
-                <div className="header__upper__nav__entry__svg">
-                  <svg
-                    width="18"
-                    height="16"
-                    viewBox="0 0 42 42"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M18.8333 36.1667C28.4063 36.1667 36.1667 28.4063 36.1667 18.8333C36.1667 9.2604 28.4063 1.5 18.8333 1.5C9.2604 1.5 1.5 9.2604 1.5 18.8333C1.5 28.4063 9.2604 36.1667 18.8333 36.1667Z"
-                      stroke="currentColor"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M40.5002 40.5002L31.0752 31.0752"
-                      stroke="currentColor"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
                 </div>
               </div>
             </div>

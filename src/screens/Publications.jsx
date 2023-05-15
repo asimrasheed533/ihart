@@ -1,8 +1,7 @@
-import React from "react";
 import Bannermain from "../compounts/Bannermain";
-import blog from "../assets/blog.png";
-import ContectSection from "../compounts/ContectSection";
 import BlogCard from "../compounts/BlogCard";
+import blog from "../assets/blog.png";
+
 export default function Publications() {
   return (
     <>
@@ -55,7 +54,6 @@ export default function Publications() {
           text="-HART is dedicated to providing innovative and unique solutions"
         />
       </div>
-      <ContectSection />
     </>
   );
 }

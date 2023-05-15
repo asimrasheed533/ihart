@@ -11,7 +11,7 @@ $secondary: #e24149;
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 .header__navbar__contact {
   background-color: $primary;
@@ -88,6 +88,7 @@ body {
   width: 275px;
   left: calc(-50% - 30px);
   display: none;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
 .header__navbar__link__dropdown__link {
   text-decoration: none;
@@ -116,7 +117,7 @@ body {
 .header__navbar__link {
   text-decoration: none;
   color: $primary;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0px 7px;
   padding: 12px;
   transition: 0.3s ease-in-out;
@@ -180,7 +181,7 @@ body {
   margin: 0 auto;
 }
 .banner__img {
-  width: 100%;
+  width: 65%;
   height: 400px;
 }
 .banner__img img {
@@ -193,7 +194,7 @@ body {
   background-color: $secondary;
   color: white;
   height: 403px;
-  width: 45%;
+  width: 35%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -478,7 +479,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #f1f1f1;
   padding-bottom: 2em;
 }
 .about__md__img img {
@@ -549,14 +549,15 @@ body {
 }
 .scop__wraper__main__entry span {
   color: $primary;
-  font-size: 20px;
-  margin-right: 18px;
+  font-size: 18px;
   position: relative;
   font-weight: 600;
+  margin-right: .5em;
 }
 .scop__wraper__main__entry {
-  margin: 10px 0px;
+  margin: 1em 0px;
   color: #5a6163;
+  text-transform: capitalize;
 }
 .scop__container__sub__heading {
   color: #5a6163;
@@ -689,7 +690,7 @@ body {
 }
 .executive__text__wraper__entry {
   margin: 10px 0px;
-  font-size: 16px;
+  font-size: 14px;
   position: relative;
 }
 .executive__text__wraper__entry::before {
@@ -833,7 +834,7 @@ body {
 }
 .reducing__contact__container__row__entry {
   margin: 10px 0px;
-  font-size: 16px;
+  font-size: 14px;
   color: #5a6163;
 }
 .reducing__contact__container__heading {
@@ -920,7 +921,7 @@ body {
   font-family: "PT Serif", serif;
 }
 .blog__card__wraper__sub__heading {
-  font-size: 16px;
+  font-size: 14px;
   color: #8e9394;
   margin: 12px 0px;
 }
@@ -987,6 +988,15 @@ body {
   .banner__img__text__wraper {
     width: 65%;
   }
+  .about__md{
+    align-items: center;
+  }
+  .banner__img{
+    height: fit-content;
+    width: fit-content;
+    min-width: 100%;
+    min-height: 250px;
+  }
 }
 @media (max-width: 950px) {
   .footer__container__row {
@@ -1049,7 +1059,7 @@ body {
     font-size: 20px;
   }
   .solution__text__wraper__entry {
-    font-size: 16px;
+    font-size: 14px;
   }
   .about__contect__section__heading {
     font-size: 20px;
@@ -1082,7 +1092,7 @@ body {
     font-size: 24px;
   }
   .Innovative__heading__sub {
-    font-size: 16px;
+    font-size: 14px;
   }
   .reducing__contact__container__row {
     flex-direction: column;

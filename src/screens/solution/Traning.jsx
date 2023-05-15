@@ -1,18 +1,9 @@
-import React from "react";
-import Bannermain from "../compounts/Bannermain";
-import solution from "../assets/solution.png";
-import traning from "../assets/traning.png";
-import tstep from "../assets/tstep.png";
-import ContectSection from "../compounts/ContectSection";
+import traning from "../../assets/traning.png";
+import tstep from "../../assets/tstep.png";
 
 export default function Traning() {
   return (
     <>
-      <Bannermain
-        banner={solution}
-        heading="Solutions"
-        subheading="Quality healthcare should be Effective, Expedient, Error-free and Efficient."
-      />
       <div className="about__contect__section">
         <div className="about__contect__section__heading">
           Training in Quality Improvement and Patient Safety in Healthcare
@@ -115,7 +106,6 @@ export default function Traning() {
         More detailed and advanced courses of varying duration are available
         based on a joint needs-assessment and existing capacity and capability.
       </div>
-      <ContectSection />
     </>
   );
 }

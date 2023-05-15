@@ -1,16 +1,8 @@
-import React from "react";
-import Bannermain from "../compounts/Bannermain";
-import solution from "../assets/solution.png";
-import confer from "../assets/confer.png";
-import ContectSection from "../compounts/ContectSection";
+import confer from "../../assets/confer.png";
+
 export default function Conferences() {
   return (
     <>
-      <Bannermain
-        banner={solution}
-        heading="Solutions"
-        subheading="Quality healthcare should be Effective, Expedient, Error-free and Efficient."
-      />
       <div className="about__contect__section">
         <div className="about__contect__section__heading">
           CME/CPD Conferences
@@ -51,7 +43,6 @@ export default function Conferences() {
           needs.
         </div>
       </div>
-      <ContectSection />
     </>
   );
 }
