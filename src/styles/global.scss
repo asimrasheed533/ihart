@@ -79,7 +79,7 @@ body {
 }
 .header__navbar__link__dropdown {
   display: flex;
-  padding: 2em 0em;
+  padding-bottom: 1em;
   flex-direction: column;
   align-items: center;
   position: absolute;
@@ -344,7 +344,7 @@ body {
 }
 .contect__contaier__col__heading {
   width: 100%;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
   color: $primary;
   margin-top: 1em;
@@ -387,7 +387,7 @@ body {
 }
 
 .contect__contaier__col__text__heading {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
   color: $primary;
   margin-top: 1em;
@@ -548,9 +548,9 @@ body {
 .scop__wraper__main__entry span {
   color: $primary;
   font-size: 20px;
-  font-weight: 900;
   margin-right: 18px;
   position: relative;
+  font-weight: 600;
 }
 .scop__wraper__main__entry {
   margin: 10px 0px;
