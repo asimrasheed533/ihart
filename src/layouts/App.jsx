@@ -7,10 +7,10 @@ export default function App() {
   return (
     <>
       <Head
-        title="Remixer"
-        image="/favicon.svg"
+        title="Ihart"
+        image="/ihart.png"
         url="https://vitefilerouter.com"
-        description="Remixer"
+        description="Ihart is a website for the people who want to learn about the art of the world."
       />
       <Header />
       <Outlet />

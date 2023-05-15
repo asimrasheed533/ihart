@@ -168,7 +168,7 @@ body {
   text-decoration: none;
 }
 .banner__section {
-  background-color: $primary;
+  // background-color: $primary;
   width: 100%;
 }
 .banner__wraper {
@@ -254,15 +254,14 @@ body {
 .traning__card__text__wraper {
   width: 28%;
   min-width: 270px;
-  min-height: 370px;
+  min-height: 310px;
   display: flex;
   align-items: start;
-  justify-content: space-between;
   flex-direction: column;
   background-color: $secondary;
   color: white;
   margin: 0.5em;
-  padding: 18px 12px;
+  padding: 1.5em;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -277,18 +276,20 @@ body {
   justify-content: flex-start;
 }
 .training__card__svg svg {
-  height: 60px;
+  height: 50px;
+  margin-right: 1em;
+  margin-top: -0.7em;
 }
 .training__card__heading {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 1em;
   font-family: "PT Serif", serif;
 }
 .traning__card__contect {
-  font-size: 16px;
-  margin: 12px 0px;
+  font-size: 14px;
   line-height: 22px;
+  flex: 1;
 }
 .traning__card__btn {
   width: 100%;
@@ -302,6 +303,7 @@ body {
   padding: 12px 20px;
   color: black;
   font-weight: 600;
+  font-size: 13px;
   transition: 0.3s ease-in-out;
   margin-top: 1em;
 }
@@ -737,10 +739,9 @@ body {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 16px;
+  margin: 8px;
   cursor: pointer;
   border: 1px solid #f1f3f2;
-  border-radius: 5px;
 }
 .client__img__container__img img {
   height: 150px;
