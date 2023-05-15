@@ -4,6 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "PT Serif", serif;
+  // font-family: sans-serif;
 }
 $primary: #025294;
 $secondary: #e24149;
@@ -16,7 +17,6 @@ body {
   background-color: $primary;
   padding: 8px 13px;
   margin: 0px 12px;
-  border-radius: 4px;
   color: white;
   cursor: pointer;
 }
@@ -62,7 +62,6 @@ body {
   background-color: $secondary;
   color: white;
   padding: 12px;
-  border-radius: 8px;
   font-weight: 600;
 }
 .header__navbar__link__parent {
@@ -81,14 +80,13 @@ body {
 }
 .header__navbar__link__dropdown {
   display: flex;
-  padding: 2em;
-  border-radius: 5px;
+  padding: 2em 0em;
   flex-direction: column;
   align-items: center;
   position: absolute;
   top: 40px;
   background-color: white;
-  width: 300px;
+  width: 275px;
   left: calc(-50% - 30px);
   display: none;
 }
@@ -98,13 +96,18 @@ body {
   color: $primary;
   font-weight: 400;
   transition: 0.1s ease-in-out;
-  padding: 12px 10px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 6px;
   cursor: pointer;
+  border-bottom: 0.6px solid rgb(133, 130, 130);
 }
 .header__navbar__link__dropdown__link:hover {
   background-color: $secondary;
   color: white;
   transition: 0.1s ease-in-out;
+  border-bottom: 0.6px solid $secondary;
 }
 .header__navbar__link {
   text-decoration: none;
@@ -112,17 +115,13 @@ body {
   font-size: 16px;
   margin: 0px 7px;
   padding: 12px;
-  border-radius: 8px;
   transition: 0.3s ease-in-out;
-  font-weight: 600;
 }
 .header__navbar__link:hover {
   background-color: $secondary;
   color: white;
   padding: 12px;
-  border-radius: 8px;
   transition: 0.3s ease-in-out;
-  font-weight: 600;
 }
 .header__menu {
   display: none;
@@ -158,6 +157,11 @@ body {
   border: none;
   outline: none;
   border-bottom: 1px solid black;
+}
+.header__upper__nav__entry__text {
+  color: $primary;
+  font-size: 14px;
+  text-decoration: none;
 }
 .banner__section {
   background-color: $primary;
@@ -258,7 +262,6 @@ body {
 }
 .traning__card__text__wraper:hover {
   transition: 0.3s ease-in-out;
-  border-radius: 12px;
   box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px;
 }
 .training__card__container__row {
@@ -298,7 +301,6 @@ body {
 .traning__card__btn__link:hover {
   background-color: $primary;
   color: white;
-  border-radius: 6px;
   transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -342,7 +344,7 @@ body {
 }
 .contect__contaier__col__form {
   width: 100%;
-  margin: 3em 0em;
+  margin: 2em 0em;
 }
 .input__wraper {
   width: 100%;
@@ -356,7 +358,6 @@ body {
 .input__wraper__entry__input {
   width: 100%;
   padding: 12px;
-  border-radius: 6px;
   border: none;
   outline: none;
   margin-bottom: 1em;
@@ -373,7 +374,6 @@ body {
 .input__wraper textarea {
   width: 100%;
   padding: 12px;
-  border-radius: 6px;
   border: none;
   outline: none;
 }
@@ -395,6 +395,12 @@ body {
   color: #5a6163;
   font-weight: 600;
   margin-bottom: 6px;
+}
+.input__wraper__entry__error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 2px;
+  display: none;
 }
 .about__contect__section {
   width: 100%;
@@ -477,7 +483,6 @@ body {
   background-color: $primary;
   color: white;
   padding: 12px 16px;
-  border-radius: 4px;
   margin: 12px 0px;
   cursor: pointer;
 }
@@ -492,7 +497,12 @@ body {
   font-weight: 600;
   text-decoration: none;
   margin: 30px 0px;
-  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+.about__md__more__btn:hover {
+  background-color: $primary;
+  color: white;
+  transition: 0.2s ease-in-out;
 }
 .scop__container {
   width: 100%;
@@ -698,7 +708,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   max-width: 1300px;
   margin: 0 auto;
   padding: 2em 0em;
@@ -861,7 +871,7 @@ body {
   cursor: pointer;
 }
 .blog__card__wraper:hover {
-  background-color: $primary;
+  background-color: $secondary;
   color: white;
   transition: 0.3s ease-in-out;
 }
@@ -924,7 +934,6 @@ body {
     cursor: pointer;
   }
   .header__entries {
-    border-radius: 12px;
     display: flex;
     flex-direction: column;
     margin-top: 30px;

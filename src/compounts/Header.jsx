@@ -98,9 +98,9 @@ export default function Header() {
         }
       >
         <div className="header__navbar__link__wraper">
-          <div className="header__logo">
+          <Link to="/" className="header__logo">
             <img src={ilogo} alt="logo" />
-          </div>
+          </Link>
 
           <div className="header__upper__container">
             {isNavOpen ? (
@@ -182,12 +182,12 @@ export default function Header() {
                     />
                   </svg>
                 </div>
-                <div className="header__upper__nav__entry__text">
+                <Link className="header__upper__nav__entry__text">
                   +1 (202) 800 9099
-                </div>
+                </Link>
               </div>
               <div className="header__upper__nav__entry">
-                <div className="header__upper__nav__entry__svg">
+                <Link className="header__upper__nav__entry__svg">
                   <svg
                     width="18"
                     height="13"
@@ -212,7 +212,7 @@ export default function Header() {
                       fill="currentColor"
                     />
                   </svg>
-                </div>
+                </Link>
                 <div className="header__upper__nav__entry__text">
                   info@ihartglobal.org
                 </div>

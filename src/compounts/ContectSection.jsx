@@ -18,6 +18,9 @@ export default function ContectSection() {
                       type="text"
                       placeholder="Name"
                     />
+                    <div className="input__wraper__entry__error">
+                      The field is required
+                    </div>
                   </div>
                   <div className="input__wraper__entry">
                     <input
@@ -25,6 +28,9 @@ export default function ContectSection() {
                       type="number"
                       placeholder="Phone"
                     />
+                    <div className="input__wraper__entry__error">
+                      The field is required
+                    </div>
                   </div>
                 </div>
                 <div className="input__wraper">
@@ -34,13 +40,20 @@ export default function ContectSection() {
                       type="email"
                       placeholder="Email"
                     />
+                    <div className="input__wraper__entry__error">
+                      The field is required
+                    </div>
                   </div>
+
                   <div className="input__wraper__entry">
                     <input
                       className="input__wraper__entry__input"
                       type="text"
                       placeholder="Organization Name"
                     />
+                    <div className="input__wraper__entry__error">
+                      The field is required
+                    </div>
                   </div>
                 </div>
                 <div className="input__wraper">
@@ -49,6 +62,9 @@ export default function ContectSection() {
                     placeholder="Message here..."
                     id="#"
                   />
+                  <div className="input__wraper__entry__error">
+                    The field is required
+                  </div>
                 </div>
               </form>
               <div className="btn__md__more">
