@@ -552,7 +552,7 @@ body {
   font-size: 18px;
   position: relative;
   font-weight: 600;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 .scop__wraper__main__entry {
   margin: 1em 0px;
@@ -729,7 +729,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   max-width: 1300px;
   margin: 0 auto;
   padding: 2em 0em;
@@ -743,14 +743,16 @@ body {
   margin: 8px;
   cursor: pointer;
   border: 1px solid #f1f3f2;
+  overflow: hidden;
 }
 .client__img__container__img img {
   height: 150px;
   width: 100%;
+  max-width: 200px;
   transition: 0.3s ease-in-out;
 }
-.client__img__container__img img:hover {
-  transform: scale(1.6);
+.client__img__container__img:hover img {
+  transform: scale(1.1);
   transition: 0.5s ease-in-out;
 }
 .executives__container {
@@ -781,17 +783,21 @@ body {
   padding: 2em 1em;
 }
 .traning__img img {
-  height: 400px;
+  width: 100%;
+  max-width: 800px;
   object-fit: cover;
 }
 .traning__img__flow {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .traning__img__flow img {
   width: 100%;
-  height: 400px;
+  max-width: 800px;
 }
 .traning__content__section {
   width: 100%;
@@ -827,7 +833,7 @@ body {
   flex-direction: column;
 }
 .reducing__contact__container__col__heading {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   color: $primary;
   margin-bottom: 1em;
@@ -878,6 +884,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 1em 0em;
 }
 
 .blog__card__wraper {
@@ -988,10 +995,10 @@ body {
   .banner__img__text__wraper {
     width: 65%;
   }
-  .about__md{
+  .about__md {
     align-items: center;
   }
-  .banner__img{
+  .banner__img {
     height: fit-content;
     width: fit-content;
     min-width: 100%;
