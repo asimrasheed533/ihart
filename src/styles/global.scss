@@ -4,7 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "PT Serif", serif;
-  // font-family: sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 $primary: #025294;
 $secondary: #e24149;
@@ -204,6 +204,7 @@ body {
   font-weight: 600;
   text-align: center;
   margin: 0px 0px 0px 12px;
+  font-family: "PT Serif", serif;
 }
 .banner__img__text__wraper__sub__heading {
   font-size: 18px;
@@ -226,6 +227,7 @@ body {
   font-weight: 600;
   text-align: center;
   color: $primary;
+  font-family: "PT Serif", serif;
 }
 .Innovative__heading__sub {
   font-size: 18px;
@@ -281,6 +283,7 @@ body {
   font-size: 20px;
   font-weight: 600;
   margin: 12px;
+  font-family: "PT Serif", serif;
 }
 .traning__card__contect {
   font-size: 16px;
@@ -345,6 +348,7 @@ body {
   font-weight: 600;
   color: $primary;
   margin-top: 1em;
+  font-family: "PT Serif", serif;
 }
 .contect__contaier__col__form {
   width: 100%;
@@ -387,6 +391,7 @@ body {
   font-weight: 600;
   color: $primary;
   margin-top: 1em;
+  font-family: "PT Serif", serif;
 }
 .contect__contaier__col__text__entry {
   display: flex;
@@ -399,6 +404,7 @@ body {
   color: #5a6163;
   font-weight: 600;
   margin-bottom: 6px;
+  font-family: "PT Serif", serif;
 }
 .input__wraper__entry__error {
   color: red;
@@ -424,10 +430,12 @@ body {
   font-weight: 600;
   color: $primary;
   margin-bottom: 12px;
+  font-family: "PT Serif", serif;
 }
 .about__contect__section__sub__heading {
   line-height: 24px;
   margin-bottom: 1em;
+  font-family: "PT Serif", serif;
 }
 .solution__contect__section__sub__heading {
   line-height: 24px;
@@ -479,6 +487,7 @@ body {
   font-weight: 600;
   color: $primary;
   margin: 12px 0px;
+  font-family: "PT Serif", serif;
 }
 .about__md__sub__heading {
   color: #5a6163;
@@ -524,6 +533,7 @@ body {
   font-weight: 600;
   color: $primary;
   margin-bottom: 12px;
+  font-family: "PT Serif", serif;
 }
 .scop__wraper__main {
   width: 100%;
@@ -579,6 +589,7 @@ body {
   color: $primary;
   margin-bottom: 12px;
   padding: 0em 1.4em;
+  font-family: "PT Serif", serif;
 }
 .our__range__container__wraper {
   display: flex;
@@ -604,6 +615,7 @@ body {
   color: $secondary;
   padding: 20px 18px;
   text-align: center;
+  font-family: "PT Serif", serif;
 }
 .our__range__card__row {
   display: flex;
@@ -649,6 +661,7 @@ body {
   font-weight: 600;
   color: $primary;
   margin-bottom: 12px;
+  font-family: "PT Serif", serif;
 }
 .solution__text__wraper__sub__heading {
   color: #5a6163;
@@ -702,6 +715,7 @@ body {
   font-weight: 600;
   color: $primary;
   margin-bottom: 12px;
+  font-family: "PT Serif", serif;
 }
 .client__content__wraper__sub__heading {
   color: #5a6163;
@@ -752,6 +766,7 @@ body {
   font-weight: 600;
   color: $primary;
   margin-bottom: 1em;
+  font-family: "PT Serif", serif;
 }
 .traning__img {
   width: 100%;
@@ -824,7 +839,8 @@ body {
   margin: 1em 0em;
   font-size: 24px;
   font-weight: 600;
-  color: #0e7bd4;
+  color: $primary;
+  font-family: "PT Serif", serif;
 }
 .reducing__img {
   width: 100%;
@@ -883,6 +899,7 @@ body {
 .blog__card__wraper:hover .blog__card__wraper__heading {
   color: white;
   transition: 0.3s ease-in-out;
+  font-family: "PT Serif", serif;
 }
 .blog__card__wraper:hover .blog__card__wraper__sub__heading {
   color: white;
@@ -899,6 +916,7 @@ body {
   font-weight: 600;
   color: black;
   margin: 5px 0px;
+  font-family: "PT Serif", serif;
 }
 .blog__card__wraper__sub__heading {
   font-size: 16px;
@@ -935,6 +953,7 @@ body {
   font-size: 22px;
   font-weight: 600;
   color: $primary;
+  font-family: "PT Serif", serif;
   // margin-bottom: 6px;
 }
 .popup__container__subheading {
