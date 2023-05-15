@@ -464,8 +464,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #e9e2e2;
-  padding: 1em;
+  background-color: #f1f1f1;
+  padding-bottom: 2em;
 }
 .about__md__img img {
   height: 300px;
@@ -474,7 +474,7 @@ body {
   font-size: 18px;
   font-weight: 600;
   color: $primary;
-  margin-bottom: 7px;
+  margin: 12px 0px;
 }
 .about__md__sub__heading {
   color: #5a6163;

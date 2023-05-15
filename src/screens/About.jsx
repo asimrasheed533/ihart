@@ -1,7 +1,8 @@
 import about from "../assets/about.png";
 import profit from "../assets/profit.png";
 import discovery from "../assets/discovery.png";
-import md from "../assets/md.png";
+// import md from "../assets/md.png";
+import mdimg from "../assets/mdimg.png";
 import Bannermain from "../compounts/Bannermain";
 import ContectSection from "../compounts/ContectSection";
 
@@ -101,7 +102,7 @@ export default function About() {
       </div>
       <div className="about__md">
         <div className="about__md__img">
-          <img src={md} alt="image" />
+          <img src={mdimg} alt="image" />
           <div className="about__md__heading">Fauzia Anjum Vohra</div>
           <div className="about__md__sub__heading">Managing Director</div>
           <div className="about__md__learn">Read More</div>
