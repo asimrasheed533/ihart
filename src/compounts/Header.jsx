@@ -44,7 +44,7 @@ const dropdown = [
 const aboutdrop = [
   {
     label: "Introduction",
-    link: "introduction",
+    link: "/introduction",
   },
   {
     label: "Value",

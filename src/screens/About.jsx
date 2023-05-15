@@ -108,6 +108,39 @@ export default function About() {
           <div className="about__md__learn">Read More</div>
         </div>
       </div>
+      <div className="popup__main">
+        <div className="popup__container">
+          <div className="popup__container__heading">Fauzia Anjum Vohra</div>
+          <div className="popup__container__subheading">Managing Directora</div>
+          <div className="popup__container__text">
+            Fauzia Vohra’s extensive management career includes successfully
+            setting up and managing large businesses and teams globally. She has
+            handled business portfolios in excess of USD 3 Billion covering
+            Government, Quasi-Government, Public and Private entities. Ms. Vohra
+            has previously facilitated capital raising for establishment and
+            expansion of hospitals and healthcare related corporations in the
+            Middle East and Asia. She has led large capital market transactions
+            not only in the west but also in emerging markets including Asia
+            Pacific, Middle East, Africa and Turkey. Ms. Vohra has previously
+            worked at General Electric (GE), one of the world’s leading
+            companies in industrial and healthcare equipment. Her management
+            expertise spans Business Development, Capital Markets, Strategy,
+            Financial Planning, Quality Improvement and Product Management. As a
+            Six Sigma Black Belt at GE, she led several key operational
+            efficiency projects resulting in significant cost savings and
+            increased revenue streams.
+            <br />
+            <br />
+            Ms. Vohra holds a Master’s degree in Finance from the prestigious
+            Monash University in Australia. In addition, she holds a Graduate
+            Diploma in Corporate Treasury from the Finance and Treasury
+            Association of Australia. Ms. Vohra is also Six Sigma certified from
+            GE. She is a member of the American Women’s Association and is
+            actively involved in community and social development.
+          </div>
+        </div>
+      </div>
+
       <ContectSection />
     </>
   );
