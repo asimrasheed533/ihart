@@ -21,7 +21,6 @@ body {
   cursor: pointer;
 }
 .header__section {
-  // position: fixed;
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
@@ -96,12 +95,17 @@ body {
   color: $primary;
   font-weight: 400;
   transition: 0.1s ease-in-out;
-  padding-right: 16px;
-  padding-left: 16px;
   padding-top: 12px;
   padding-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  border-bottom: 0.6px solid rgb(133, 130, 130);
+  width: 100%;
+  border-bottom: 0.6px solid rgb(207 207 207);
+}
+.header__navbar__link__dropdown__link:last-child {
+  border-bottom: none;
 }
 .header__navbar__link__dropdown__link:hover {
   background-color: $secondary;
@@ -247,11 +251,11 @@ body {
 }
 .traning__card__text__wraper {
   width: 28%;
-  min-width: 300px;
-  min-height: 340px;
+  min-width: 270px;
+  min-height: 370px;
   display: flex;
   align-items: start;
-  justify-content: start;
+  justify-content: space-between;
   flex-direction: column;
   background-color: $secondary;
   color: white;
@@ -310,12 +314,12 @@ body {
 }
 .footer__container__row {
   width: 100%;
-  max-width: 1366px;
+  max-width: 1300px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  padding: 1em 3em;
   color: white;
 }
 .contect__wraper__main {
@@ -857,6 +861,7 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
 .blog__card__wraper {
   display: flex;
   align-items: center;
@@ -866,12 +871,20 @@ body {
   margin: 1em;
   padding: 0em 1em;
   width: 300px;
-  transition: 0.3s ease-in-out;
   border-radius: 6px;
   cursor: pointer;
 }
 .blog__card__wraper:hover {
   background-color: $secondary;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.blog__card__wraper:hover .blog__card__wraper__heading {
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.blog__card__wraper:hover .blog__card__wraper__sub__heading {
   color: white;
   transition: 0.3s ease-in-out;
 }

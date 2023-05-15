@@ -14,7 +14,7 @@ export default function Services() {
       />
 
       <div className="scop__wraper__main">
-        <div className="scop__container__heading">Scop</div>
+        <div className="scop__container__heading">Scope</div>
         <div className="scop__container__sub__heading">
           I-HART offers customized services across the entire health care
           spectrum – each offering caters to the specific needs of our clients –
