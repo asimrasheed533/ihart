@@ -7,7 +7,10 @@ export default function Footer() {
             Copyright © 2023. All Rights Reserved. I-HART.
           </div>
           <div className="footer__container__entry">
-            Design: oliverstephenson.com
+            Design:{" "}
+            <a href="https://dsmeglobal.com/" target="_blank">
+              dsmeglobal.com
+            </a>
           </div>
         </div>
       </div>

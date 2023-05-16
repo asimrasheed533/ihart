@@ -328,6 +328,10 @@ body {
   padding: 1em 3em;
   color: white;
 }
+.footer__container__entry a {
+  color: white;
+  text-decoration: none;
+}
 .contect__wraper__main {
   background-color: #f1f3f2;
   padding: 2em 0em;
@@ -397,7 +401,7 @@ body {
   margin-top: 1em;
   font-family: "PT Serif", serif;
 }
-.contect__contaier__col__text__entr__first{
+.contect__contaier__col__text__entr__first {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -409,7 +413,6 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   margin: 12px 0px;
-
 }
 .contect__contaier__col__text__entry__heading {
   color: #5a6163;
