@@ -76,7 +76,7 @@ export default function ContectSection() {
           </div>
           <div className="contect__contaier__col">
             <div className="contect__contaier__col__text__heading">Contact</div>
-            <div className="contect__contaier__col__text__entry">
+            <div className="contect__contaier__col__text__entr__first">
               <div className="contect__contaier__col__text__entry__heading">
                 Address:
               </div>
