@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function ContectSection() {
   return (
     <>
-      <div className="contect__wraper__main">
+      <section id="contact" className="contect__wraper__main">
         <div className="contect__contaier">
           <div className="contect__contaier__col">
             <div className="contect__contaier__col__heading">
@@ -111,7 +111,7 @@ export default function ContectSection() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

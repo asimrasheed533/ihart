@@ -150,7 +150,7 @@ export default function Header() {
                 </div>
                 <div className="header__navbar__link__parent">
                   <NavLink className="header__navbar__link" to="/solution">
-                    Solution
+                    Solutions
                   </NavLink>
                   <div className="header__navbar__link__dropdown">
                     {dropdown.map((item) => (
@@ -169,9 +169,20 @@ export default function Header() {
                 <NavLink className="header__navbar__link" to="/client">
                   Clients
                 </NavLink>
-                <NavLink className="header__navbar__link" to="/contact">
-                  Contact Us
+                <NavLink className="header__navbar__link" to="/news">
+                  News/Events
                 </NavLink>
+                <Link
+                  className="header__navbar__link"
+                  to="/"
+                  onClick={() => {
+                    setTimeout(() => {
+                      document.getElementById("contact").scrollIntoView();
+                    }, 100);
+                  }}
+                >
+                  Contact Us
+                </Link>
               </div>
             ) : null}
             <div className="header__upper__nav__container">
