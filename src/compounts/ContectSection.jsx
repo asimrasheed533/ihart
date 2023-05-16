@@ -81,7 +81,8 @@ export default function ContectSection() {
                 Address:
               </div>
               <div className="contect__contaier__col__text__entry__sub__heading">
-                1300 Pennsylvania Avenue, NW #190-635 Washington, DC 20004 USA
+                1300 Pennsylvania Avenue, <br /> NW #190-635 Washington, DC
+                20004 USA
               </div>
             </div>
             <div className="contect__contaier__col__text__entry">

@@ -241,7 +241,7 @@ body {
 .training__card__container__main {
   padding: 3em 0em;
   width: 100%;
-  background-image: url(../assets/background.png);
+  background-image: url(../assets/ibg.jpg);
 }
 .training__card__container {
   width: 100%;
@@ -380,7 +380,7 @@ body {
   margin: 0;
 }
 .input__wraper__entry__input::placeholder {
-  color: #c4c4c4;
+  color: #5a6163;
 }
 .input__wraper textarea {
   width: 100%;
@@ -408,6 +408,10 @@ body {
   font-weight: 600;
   margin-bottom: 6px;
   font-family: "PT Serif", serif;
+}
+.contect__contaier__col__text__entry__sub__heading {
+  font-size: 16px;
+  color: #5a6163;
 }
 .input__wraper__entry__error {
   color: red;
