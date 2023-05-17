@@ -456,6 +456,10 @@ body {
   font-family: "PT Serif", serif;
   color: #5a6163;
 }
+.about__contect__section__sub__heading span {
+  color: $secondary;
+  font-weight: 800;
+}
 .solution__contect__section__sub__heading {
   line-height: 24px;
 }
@@ -496,6 +500,7 @@ body {
   justify-content: center;
   flex-direction: column;
   padding-bottom: 2em;
+  background-color: #f1f1f1;
 }
 .about__md__img img {
   height: 300px;
