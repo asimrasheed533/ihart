@@ -11,7 +11,7 @@ $secondary: #e24149;
 body {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 .header__navbar__contact {
   background-color: $primary;
@@ -57,7 +57,7 @@ body {
   justify-content: space-between;
   padding: 0em 1em;
 }
-.header__navbar__link__wraper .active {
+.header__navbar__link__wraper.active {
   background-color: $secondary;
   color: white;
   padding: 12px;
@@ -658,6 +658,9 @@ body {
   margin: 0 auto;
   padding: 2em 0em;
 }
+.services__img__container img {
+  width: 100%;
+}
 .solution__container {
   width: 100%;
   display: flex;
@@ -1016,7 +1019,6 @@ body {
   }
   .banner__img {
     height: fit-content;
-    width: fit-content;
     min-width: 100%;
     min-height: 250px;
   }
@@ -1055,6 +1057,12 @@ body {
     z-index: 999;
     position: absolute;
   }
+  .header__navbar__link {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .header__navbar__link__parent {
     display: flex;
     flex-direction: column;
@@ -1063,9 +1071,13 @@ body {
   .header__navbar__link__dropdown {
     position: relative;
     left: 0px;
-    width: 100%;
-    padding: 10px 20px;
+    width: 300px;
     top: 10px;
+    margin: 2px 0px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    cursor: pointer;
   }
   .header__navbar__link__dropdown::after {
     display: none;
