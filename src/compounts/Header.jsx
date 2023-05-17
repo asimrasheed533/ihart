@@ -244,6 +244,7 @@ export default function Header() {
                 </div>
               </div>
             </div>
+
             <div
               className="header__menu"
               onClick={() => setIsNavOpen(!isNavOpen)}
@@ -258,17 +259,17 @@ export default function Header() {
 }
 function X() {
   return (
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+    <svg width="24" height="18" viewBox="0 0 14 14" fill="none">
       <path
         d="M13 1L1 13"
-        stroke="#025294"
+        stroke="white"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
         d="M1 1L13 13"
-        stroke="#025294"
+        stroke="white"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
@@ -279,29 +280,29 @@ function X() {
 function Y() {
   return (
     <svg
-      width="20"
-      height="14"
+      width="24"
+      height="18"
       viewBox="0 0 20 14"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M1 7H19"
-        stroke="#025294"
+        stroke="white"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
         d="M1 1H19"
-        stroke="#025294"
+        stroke="white"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
         d="M1 13H19"
-        stroke="#025294"
+        stroke="white"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"

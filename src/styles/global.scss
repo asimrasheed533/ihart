@@ -231,11 +231,10 @@ body {
   font-family: "PT Serif", serif;
 }
 .Innovative__heading__sub {
-  font-size: 18px;
+  font-size: 15px;
+  line-height: 1.5em;
   text-align: center;
   margin: 12px;
-  font-weight: lighter;
-  line-height: 26px;
   color: #5a6163;
 }
 .training__card__container__main {
@@ -455,6 +454,7 @@ body {
   line-height: 24px;
   margin-bottom: 1em;
   font-family: "PT Serif", serif;
+  color: #5a6163;
 }
 .solution__contect__section__sub__heading {
   line-height: 24px;
@@ -709,17 +709,19 @@ body {
 }
 .executive__text__wraper__entry {
   margin: 10px 0px;
-  font-size: 14px;
+  padding-left: 2.4em;
+  font-size: 15px;
   position: relative;
+  color: #5a6163;
 }
 .executive__text__wraper__entry::before {
   position: absolute;
   content: "";
-  width: 9px;
-  height: 9px;
-  background-color: $secondary;
+  width: 6px;
+  height: 6px;
+  background-color: rgb(73, 71, 71);
   border-radius: 30px;
-  left: -22px;
+  left: 12px;
   top: 6px;
 }
 .client__content__wraper {
@@ -782,7 +784,9 @@ body {
   flex-direction: column;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 2em 3em;
+  padding: 0em 3em;
+  padding-bottom: 35px;
+  color: #5a6163;
 }
 .executives__container__heading {
   font-size: 20px;
@@ -799,11 +803,12 @@ body {
   flex-direction: column;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 2em 1em;
+  margin-bottom: 15px;
+  padding: 0em 3em;
 }
 .traning__img img {
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   object-fit: cover;
 }
 .traning__img__flow {
@@ -1038,13 +1043,17 @@ body {
     height: 230px;
   }
   .header__upper__nav__container {
-    display: none;
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
   }
   .header__menu {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    background-color: $secondary;
+    padding: 3px 10px;
   }
   .header__entries {
     display: flex;
@@ -1086,8 +1095,8 @@ body {
   }
 }
 @media (max-width: 550px) {
-  .contect__contaier__col__text__entry__sub__heading {
-    font-size: 16px;
+  .header__upper__nav__container {
+    display: none;
   }
   .reducing__contact__container__heading {
     font-size: 20px;
@@ -1125,6 +1134,9 @@ body {
   }
 }
 @media (max-width: 700px) {
+  .contect__contaier__col__text__entry__sub__heading {
+    font-size: 15px;
+  }
   .solution__text__wraper__heading {
     font-size: 24px;
   }
