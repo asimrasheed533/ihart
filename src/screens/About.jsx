@@ -120,10 +120,10 @@ export default function About() {
 
 function Popup({ setIsOpen }) {
   useEffect(() => {
-    document.body.style.overflow = "hidden";
+    document.body.style.overflowY = "hidden";
 
     return () => {
-      document.body.style.overflow = "overflow";
+      document.body.style.overflowY = "auto";
     };
   }, []);
   return (
