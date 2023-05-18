@@ -464,13 +464,13 @@ body {
 }
 .about__contect__section__sub__heading {
   line-height: 24px;
-  margin-bottom: 1em;
   font-family: "PT Serif", serif;
   color: #5a6163;
 }
 .about__contect__section__sub__heading span {
   color: $secondary;
-  font-weight: 800;
+  font-weight: 700;
+  padding: 0px 5px;
 }
 .solution__contect__section__sub__heading {
   line-height: 24px;
@@ -1121,6 +1121,9 @@ body {
   }
 }
 @media (max-width: 550px) {
+  .profit__img img {
+    height: auto;
+  }
   .header__upper__nav__container {
     display: none;
   }

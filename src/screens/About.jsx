@@ -93,6 +93,9 @@ export default function About() {
           consultancy firms, medical schools/colleges, governments and
           non-governmental organizations can <span> P R O F I T</span> from our
           novel and visionary solutions.
+          <br />
+          <br />
+          Our services are:
         </div>
       </section>
       <div className="profit__img">
