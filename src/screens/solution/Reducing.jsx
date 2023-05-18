@@ -44,8 +44,8 @@ export default function Reducing() {
               <span>2. </span>Community Acquired Pneumonia
             </div>
             <div className="reducing__contact__container__row__entry">
-              <span>3. </span>Ischemic Heart Disease – Angina & Unstable Angina
-              – STEMI – Non STEMI
+              <span>3. </span>Ischemic Heart Disease <br /> – Angina & Unstable
+              Angina <br /> – STEMI –<br /> Non STEMI
             </div>
             <div className="reducing__contact__container__row__entry">
               <span>4. </span>Heart Failure
