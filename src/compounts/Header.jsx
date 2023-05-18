@@ -70,6 +70,7 @@ export default function Header() {
   const navigate = useNavigate();
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   function changeIsNavOpen() {
     if (window.innerWidth <= 1000) {
@@ -106,11 +107,28 @@ export default function Header() {
             <div className="header__upper__container">
               {isNavOpen ? (
                 <div className="header__entries">
-                  <NavLink end className="header__navbar__link" to="/">
+                  <NavLink
+                    end
+                    className="header__navbar__link"
+                    to="/"
+                    onClick={() => {
+                      if (window.innerWidth <= 1000) {
+                        setIsNavOpen(false);
+                      }
+                    }}
+                  >
                     Home
                   </NavLink>
                   <div className="header__navbar__link__parent">
-                    <NavLink className="header__navbar__link" to="/about">
+                    <NavLink
+                      onClick={() => {
+                        if (window.innerWidth <= 1000) {
+                          setIsNavOpen(false);
+                        }
+                      }}
+                      className="header__navbar__link"
+                      to="/about"
+                    >
                       About Us
                     </NavLink>
 
@@ -118,13 +136,16 @@ export default function Header() {
                       {aboutdrop.map((item) => (
                         <Link
                           to="/about"
-                          onClick={() =>
+                          onClick={() => {
                             setTimeout(() => {
                               document
                                 .getElementById(item.link)
                                 .scrollIntoView();
-                            }, 100)
-                          }
+                            }, 100);
+                            if (window.innerWidth <= 1000) {
+                              setIsNavOpen(false);
+                            }
+                          }}
                           className="header__navbar__link__dropdown__link"
                         >
                           {item.label}
@@ -133,7 +154,15 @@ export default function Header() {
                     </div>
                   </div>
                   <div className="header__navbar__link__parent">
-                    <NavLink className="header__navbar__link" to="/services">
+                    <NavLink
+                      onClick={() => {
+                        if (window.innerWidth <= 1000) {
+                          setIsNavOpen(false);
+                        }
+                      }}
+                      className="header__navbar__link"
+                      to="/services"
+                    >
                       Services
                     </NavLink>
                     <div className="header__navbar__link__dropdown">
@@ -161,6 +190,11 @@ export default function Header() {
                     <div className="header__navbar__link__dropdown">
                       {dropdown.map((item) => (
                         <NavLink
+                          onClick={() => {
+                            if (window.innerWidth <= 1000) {
+                              setIsNavOpen(false);
+                            }
+                          }}
                           to={"/solution" + item.link}
                           className="header__navbar__link__dropdown__link"
                         >
@@ -169,13 +203,37 @@ export default function Header() {
                       ))}
                     </div>
                   </div>
-                  <NavLink className="header__navbar__link" to="/publications">
+                  <NavLink
+                    onClick={() => {
+                      if (window.innerWidth <= 1000) {
+                        setIsNavOpen(false);
+                      }
+                    }}
+                    className="header__navbar__link"
+                    to="/publications"
+                  >
                     Publications
                   </NavLink>
-                  <NavLink className="header__navbar__link" to="/client">
+                  <NavLink
+                    onClick={() => {
+                      if (window.innerWidth <= 1000) {
+                        setIsNavOpen(false);
+                      }
+                    }}
+                    className="header__navbar__link"
+                    to="/client"
+                  >
                     Clients
                   </NavLink>
-                  <NavLink className="header__navbar__link" to="/news">
+                  <NavLink
+                    onClick={() => {
+                      if (window.innerWidth <= 1000) {
+                        setIsNavOpen(false);
+                      }
+                    }}
+                    className="header__navbar__link"
+                    to="/news"
+                  >
                     News/Events
                   </NavLink>
                   <Link
@@ -185,6 +243,9 @@ export default function Header() {
                       setTimeout(() => {
                         document.getElementById("contact").scrollIntoView();
                       }, 100);
+                      if (window.innerWidth <= 1000) {
+                        setIsNavOpen(false);
+                      }
                     }}
                   >
                     Contact Us

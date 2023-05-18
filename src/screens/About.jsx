@@ -91,8 +91,9 @@ export default function About() {
           variety of clients in the healthcare sector including academic health
           centers, hospitals, clinics/polyclinics, pharmaceutical companies,
           consultancy firms, medical schools/colleges, governments and
-          non-governmental organizations can <span> P R O F I T</span> from our
-          novel and visionary solutions.
+          non-governmental organizations can
+          <div className="profit"> P R O F I T</div> from our novel and
+          visionary solutions.
           <br />
           <br />
           Our services are:

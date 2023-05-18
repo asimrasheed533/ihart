@@ -467,10 +467,11 @@ body {
   font-family: "PT Serif", serif;
   color: #5a6163;
 }
-.about__contect__section__sub__heading span {
+.profit {
   color: $secondary;
   font-weight: 700;
-  padding: 0px 5px;
+  display: inline-block;
+  padding: 0px 4px;
 }
 .solution__contect__section__sub__heading {
   line-height: 24px;
