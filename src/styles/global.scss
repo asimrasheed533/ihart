@@ -1028,16 +1028,14 @@ body {
 }
 @media (max-width: 1200px) {
   .banner__img__text__wraper {
-    height: 230px;
+    height: 170px;
+    width: 90%;
   }
   .contect__contaier {
     flex-direction: column;
   }
   .banner__wraper {
     flex-direction: column;
-  }
-  .banner__img__text__wraper {
-    width: 90%;
   }
   .about__md {
     align-items: center;
@@ -1060,7 +1058,8 @@ body {
   }
   .banner__img__text__wraper {
     width: 90%;
-    height: 230px;
+    // height: 230px;
+    padding: 0em;
   }
 
   .header__upper__nav__container {
