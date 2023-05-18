@@ -876,10 +876,11 @@ body {
   flex-direction: column;
 }
 .reducing__contact__container__col__heading {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
-  color: $primary;
+  color: #60b4ea;
   margin-bottom: 1em;
+  font-family: "PT Serif", serif;
 }
 .reducing__contact__container__row__entry {
   line-height: 27px;
@@ -888,7 +889,7 @@ body {
 }
 .reducing__contact__container__heading {
   margin: 1em 0em;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   color: $primary;
   font-family: "PT Serif", serif;

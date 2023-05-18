@@ -195,8 +195,8 @@ export default function Header() {
                 <div className="header__upper__nav__entry">
                   <div className="header__upper__nav__entry__svg">
                     <svg
-                      width="16"
-                      height="17"
+                      width="12.58"
+                      height="16"
                       viewBox="0 0 16 17"
                       fill="currentColor"
                       xmlns="http://www.w3.org/2000/svg"
