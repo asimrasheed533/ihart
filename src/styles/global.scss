@@ -13,6 +13,9 @@ body {
   padding: 0;
   font-size: 16px;
 }
+.header__lower__nav__container {
+  display: none;
+}
 .header__navbar__contact {
   background-color: $primary;
   padding: 8px 13px;
@@ -1049,6 +1052,7 @@ body {
     width: 90%;
     height: 230px;
   }
+
   .header__upper__nav__container {
     margin: 15px 0px;
     display: flex;
@@ -1102,6 +1106,9 @@ body {
   }
 }
 @media (max-width: 550px) {
+  .header__lower__nav__container {
+    display: flex;
+  }
   .header__upper__nav__container {
     display: none;
   }
