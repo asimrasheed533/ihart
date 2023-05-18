@@ -98,7 +98,13 @@ export default function Header() {
           isScroll ? "header__navbar header__navbar__active" : "header__navbar"
         }
       >
-        <ClickAwayListener>
+        <ClickAwayListener
+          onClickAway={() => {
+            if (window.innerWidth <= 1000) {
+              setIsNavOpen(false);
+            }
+          }}
+        >
           <div className="header__navbar__link__wraper">
             <Link to="/" className="header__logo">
               <img src={ilogo} alt="logo" />

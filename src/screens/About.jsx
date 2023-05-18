@@ -3,70 +3,13 @@ import about from "../assets/about.png";
 import discovery from "../assets/discovery.png";
 import mdimg from "../assets/mdimg.png";
 import profit from "../assets/profit.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function About() {
   const [isOpen, setIsOpen] = useState();
   return (
     <>
-      {isOpen && (
-        <div className="popup__main">
-          <div className="popup__container">
-            <div className="popup__svg" onClick={() => setIsOpen(false)}>
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13 1L1 13"
-                  stroke="black"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M1 1L13 13"
-                  stroke="black"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <div className="popup__container__heading">Fauzia Anjum Vohra</div>
-            <div className="popup__container__subheading">
-              Managing Directora
-            </div>
-            <div className="popup__container__text">
-              Fauzia Vohra’s extensive management career includes successfully
-              setting up and managing large businesses and teams globally. She
-              has handled business portfolios in excess of USD 3 Billion
-              covering Government, Quasi-Government, Public and Private
-              entities. Ms. Vohra has previously facilitated capital raising for
-              establishment and expansion of hospitals and healthcare related
-              corporations in the Middle East and Asia. She has led large
-              capital market transactions not only in the west but also in
-              emerging markets including Asia Pacific, Middle East, Africa and
-              Turkey. Ms. Vohra has previously worked at General Electric (GE),
-              one of the world’s leading companies in industrial and healthcare
-              equipment. Her management expertise spans Business Development,
-              Capital Markets, Strategy, Financial Planning, Quality Improvement
-              and Product Management. As a Six Sigma Black Belt at GE, she led
-              several key operational efficiency projects resulting in
-              significant cost savings and increased revenue streams.
-              <br />
-              <br />
-              Ms. Vohra holds a Master’s degree in Finance from the prestigious
-              Monash University in Australia. In addition, she holds a Graduate
-              Diploma in Corporate Treasury from the Finance and Treasury
-              Association of Australia. Ms. Vohra is also Six Sigma certified
-              from GE. She is a member of the American Women’s Association and
-              is actively involved in community and social development.
-            </div>
-          </div>
-        </div>
-      )}
+      {isOpen && <Popup setIsOpen={setIsOpen} />}
       <Bannermain
         banner={about}
         heading="About Us"
@@ -172,5 +115,70 @@ export default function About() {
         </div>
       </div>
     </>
+  );
+}
+
+function Popup({ setIsOpen }) {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "overflow";
+    };
+  }, []);
+  return (
+    <div className="popup__main">
+      <div className="popup__container">
+        <div className="popup__svg" onClick={() => setIsOpen(false)}>
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 1L1 13"
+              stroke="black"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M1 1L13 13"
+              stroke="black"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div className="popup__container__heading">Fauzia Anjum Vohra</div>
+        <div className="popup__container__subheading">Managing Directora</div>
+        <div className="popup__container__text">
+          Fauzia Vohra’s extensive management career includes successfully
+          setting up and managing large businesses and teams globally. She has
+          handled business portfolios in excess of USD 3 Billion covering
+          Government, Quasi-Government, Public and Private entities. Ms. Vohra
+          has previously facilitated capital raising for establishment and
+          expansion of hospitals and healthcare related corporations in the
+          Middle East and Asia. She has led large capital market transactions
+          not only in the west but also in emerging markets including Asia
+          Pacific, Middle East, Africa and Turkey. Ms. Vohra has previously
+          worked at General Electric (GE), one of the world’s leading companies
+          in industrial and healthcare equipment. Her management expertise spans
+          Business Development, Capital Markets, Strategy, Financial Planning,
+          Quality Improvement and Product Management. As a Six Sigma Black Belt
+          at GE, she led several key operational efficiency projects resulting
+          in significant cost savings and increased revenue streams.
+          <br />
+          <br />
+          Ms. Vohra holds a Master’s degree in Finance from the prestigious
+          Monash University in Australia. In addition, she holds a Graduate
+          Diploma in Corporate Treasury from the Finance and Treasury
+          Association of Australia. Ms. Vohra is also Six Sigma certified from
+          GE. She is a member of the American Women’s Association and is
+          actively involved in community and social development.
+        </div>
+      </div>
+    </div>
   );
 }
