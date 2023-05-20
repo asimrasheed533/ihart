@@ -1,9 +1,11 @@
+import { Head } from "../../../modules";
 import traning from "../../assets/traning.png";
 import tstep from "../../assets/tstep.png";
 
 export default function Traning() {
   return (
     <>
+      <Head title="Traning | I-HART" />
       <div className="about__contect__section">
         <div className="about__contect__section__heading">
           Training in Quality Improvement and Patient Safety in Healthcare

@@ -144,6 +144,9 @@ body {
   height: 50px;
   width: 50px;
 }
+.header__menu:has(.active) {
+  display: flex;
+}
 .header__upper__container {
   width: 100%;
   display: flex;
@@ -400,6 +403,7 @@ body {
 }
 .input__wraper textarea {
   width: 100%;
+  resize: vertical;
   padding: 12px;
   border: none;
   outline: none;
@@ -553,6 +557,8 @@ body {
   text-decoration: none;
   margin: 30px 0px;
   transition: 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
 }
 .about__md__more__btn:hover {
   background-color: $primary;
@@ -990,16 +996,18 @@ body {
   padding: 0.4em 0em;
 }
 .popup__main {
-  background-color: rgba(0, 0, 0, 0.548);
-  z-index: 9999;
-  top: 0;
-  left: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100vh;
-  position: fixed;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.548);
+  border-radius: 5px;
+  padding: 20px;
 }
 .popup__container {
   width: 700px;
@@ -1008,6 +1016,8 @@ body {
   padding: 3em 2em;
   border-radius: 6px;
   position: relative;
+  overflow-y: auto;
+  height: 100%;
 }
 .popup__container__heading {
   font-size: 22px;
@@ -1034,6 +1044,9 @@ body {
   cursor: pointer;
 }
 @media (max-width: 1200px) {
+  .contect__contaier__col {
+    width: 55%;
+  }
   .banner__img__text__wraper {
     height: 170px;
     width: 90%;
@@ -1127,6 +1140,10 @@ body {
   }
 }
 @media (max-width: 550px) {
+  .popup__container {
+    height: 90%;
+    overflow-y: auto;
+  }
   .profit__img img {
     height: auto;
   }

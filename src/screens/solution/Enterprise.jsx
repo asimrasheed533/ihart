@@ -1,10 +1,12 @@
 import Bannermain from "../../compounts/Bannermain";
 import quilty from "../../assets/quilty.png";
 import solution from "../../assets/solution.png";
+import { Head } from "../../../modules";
 
-export default function Research() {
+export default function Enterprise() {
   return (
     <>
+      <Head title="Enterprise | I-HART" />
       <div className="about__contect__section">
         <div className="about__contect__section__heading">
           Setting Up Enterprise Quality Office Structure and Governance

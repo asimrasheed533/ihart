@@ -1,8 +1,10 @@
+import { Head } from "../../../modules";
 import rearchimg from "../../assets/rearchimg.png";
 
 export default function Research() {
   return (
     <>
+      <Head title="Research | I-HART" />
       <div className="about__contect__section">
         <div className="about__contect__section__heading">
           Research Infrastructure and Governance

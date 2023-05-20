@@ -1,10 +1,12 @@
 import Bannermain from "../compounts/Bannermain";
 import { Outlet } from "react-router-dom";
 import solution from "../assets/solution.png";
+import { Head } from "../../modules";
 
 export default function Solution() {
   return (
     <>
+      <Head title="Solution | I-HART" />
       <Bannermain
         banner={solution}
         heading="Solutions"

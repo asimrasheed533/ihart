@@ -1,10 +1,12 @@
 import Bannermain from "../compounts/Bannermain";
 import BlogCard from "../compounts/BlogCard";
 import blog from "../assets/blog.png";
+import { Head } from "../../modules";
 
 export default function Publications() {
   return (
     <>
+      <Head title="Publications | I-HART" />
       <Bannermain
         banner={blog}
         heading="Latest Publications"

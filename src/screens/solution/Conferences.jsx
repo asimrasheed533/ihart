@@ -1,8 +1,10 @@
+import { Head } from "../../../modules";
 import confer from "../../assets/confer.png";
 
 export default function Conferences() {
   return (
     <>
+      <Head title="Conferences | I-HART" />
       <div className="about__contect__section">
         <div className="about__contect__section__heading">
           CME/CPD Conferences

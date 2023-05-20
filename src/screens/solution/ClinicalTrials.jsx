@@ -1,9 +1,11 @@
+import { Head } from "../../../modules";
 import clinflow from "../../assets/clinflow.png";
 import tredflow from "../../assets/tredflow.png";
 
 export default function ClinicalTrials() {
   return (
     <>
+      <Head title="ClinicalTrials | I-HART" />
       <div className="about__contect__section">
         <div className="about__contect__section__heading">
           Clinical Trials Infrastructure

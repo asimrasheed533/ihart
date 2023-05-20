@@ -1,8 +1,10 @@
+import { Head } from "../../../modules";
 import monitoringimg from "../../assets/monitoringimg.png";
 
-export default function monitoring() {
+export default function Monitoring() {
   return (
     <>
+      <Head title="Monitoring | I-HART" />
       <div className="about__contect__section">
         <div className="about__contect__section__heading">
           Monitoring Patient Safety

@@ -1,8 +1,10 @@
+import { Head } from "../../../modules";
 import reducing from "../../assets/reducing.png";
 
 export default function Reducing() {
   return (
     <>
+      <Head title="Reducing | I-HART" />
       <div className="solution__container">
         <div className="solution__text__wraper">
           <div className="solution__text__wraper__heading">

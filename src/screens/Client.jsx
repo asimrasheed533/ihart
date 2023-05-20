@@ -15,10 +15,12 @@ import cl7 from "../assets/cl7.png";
 import cl8 from "../assets/cl8.png";
 import cl9 from "../assets/cl9.png";
 import client from "../assets/client.png";
+import { Head } from "../../modules";
 
 export default function Client() {
   return (
     <>
+      <Head title="Client | I-HART" />
       <Bannermain
         banner={client}
         heading="Our Clients"

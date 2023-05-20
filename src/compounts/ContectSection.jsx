@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
-
+import { useForm } from "react-hook-form";
 export default function ContectSection() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
+  console.log(errors);
   return (
     <>
       <section id="contact" className="contect__wraper__main">
@@ -10,22 +17,28 @@ export default function ContectSection() {
               Request for a call back
             </div>
             <div className="contect__contaier__col__form">
-              <form action="#">
+              <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="input__wraper">
                   <div className="input__wraper__entry">
                     <input
+                      {...register("firstname", { required: true })}
                       className="input__wraper__entry__input"
                       type="text"
                       placeholder="Name"
                     />
+
                     <div className="input__wraper__entry__error">
-                      The field is required
+                      {errors.name?.message}
                     </div>
                   </div>
                   <div className="input__wraper__entry">
                     <input
+                      {...register("firstname", {
+                        required: "This is required.",
+                        minLength: 11,
+                      })}
                       className="input__wraper__entry__input"
-                      type="number"
+                      type="tel"
                       placeholder="Phone"
                     />
                     <div className="input__wraper__entry__error">
@@ -37,8 +50,12 @@ export default function ContectSection() {
                   <div className="input__wraper__entry">
                     <input
                       className="input__wraper__entry__input"
-                      type="email"
+                      type="text"
                       placeholder="Email"
+                      {...register("Email", {
+                        required: true,
+                        pattern: /^\S+@\S+$/i,
+                      })}
                     />
                     <div className="input__wraper__entry__error">
                       The field is required
@@ -60,18 +77,17 @@ export default function ContectSection() {
                   <textarea
                     className="input__wraper__entry__input"
                     placeholder="Message here..."
-                    id="#"
                   />
                   <div className="input__wraper__entry__error">
                     The field is required
                   </div>
                 </div>
+                <div className="btn__md__more">
+                  <button type="submit" className="about__md__more__btn">
+                    Request for a Call Back
+                  </button>
+                </div>
               </form>
-              <div className="btn__md__more">
-                <Link className="about__md__more__btn">
-                  Request for a Call Back
-                </Link>
-              </div>
             </div>
           </div>
           <div className="contect__contaier__col">

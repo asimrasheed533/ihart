@@ -1,6 +1,9 @@
+import { Head } from "../../../modules";
+
 export default function Executive() {
   return (
     <>
+      <Head title="Executive | I-HART" />
       <div className="solution__container">
         <div className="solution__text__wraper">
           <div className="solution__text__wraper__heading">

@@ -166,6 +166,7 @@ export default function Header() {
                           setIsNavOpen(false);
                         }
                       }}
+                      end
                       className="header__navbar__link"
                       to="/services"
                     >

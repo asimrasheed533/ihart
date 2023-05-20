@@ -2,10 +2,12 @@ import Bannermain from "../compounts/Bannermain";
 import RangeCard from "../compounts/RangeCard";
 import service from "../assets/service.png";
 import servicesb from "../assets/servicesb.png";
+import { Head } from "../../modules";
 
 export default function Services() {
   return (
     <>
+      <Head title="Services | I-HART" />
       <Bannermain
         banner={service}
         heading="Our Services"

@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import { Head } from "../../../modules";
 
 export default function Solution() {
   return (
     <>
+      <Head title="Solution | I-HART" />
       <div className="solution__container">
         <div className="solution__text__wraper">
           <div className="solution__text__wraper__heading">

@@ -1,8 +1,10 @@
+import { Head } from "../../../modules";
 import clinicalimg from "../../assets/clinicalimg.png";
 
 export default function Clinical() {
   return (
     <>
+      <Head title="Clinical | I-HART" />
       <div className="about__contect__section">
         <div className="about__contect__section__heading">
           Upgrading Post Graduate Training Programs
