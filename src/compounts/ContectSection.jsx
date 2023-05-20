@@ -106,7 +106,7 @@ export default function ContectSection() {
                   <div className="input__wraper__entry">
                     <input
                       className="input__wraper__entry__input"
-                      type="text"
+                      type="email"
                       placeholder="Email"
                       name="email"
                       defaultValue={email}
