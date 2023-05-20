@@ -33,10 +33,8 @@ export default function monitoring() {
           <br />
           <br />
           Our approach to developing a toolkit to monitor patient safety is
-          based on the{" "}
-          <span style={{ color: "black", fontWeight: "bold" }}>
-            C L E A R
-          </span>{" "}
+          based on the
+          <div className="clear"> C L E A R</div>
           principles, which stipulates that such indicators should be:
         </div>
       </div>
