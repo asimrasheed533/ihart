@@ -1,13 +1,53 @@
 import { Link } from "react-router-dom";
-import { useForm } from "react-hook-form";
+import { useState } from "react";
+
 export default function ContectSection() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
-  console.log(errors);
+  const [name, setName] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [phone, setPhone] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [organization, setOrganization] = useState("");
+  const [organizationError, setOrganizationError] = useState("");
+  const [message, setMessage] = useState("");
+  const [messageError, setMessageError] = useState("");
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (name === "") {
+      setNameError("Name is required!");
+    }
+    if (phone === "") {
+      setPhoneError("Phone number is required!");
+    }
+    if (email === "") {
+      setEmailError("Email is required!");
+    }
+    if (organization === "") {
+      setOrganizationError("Organization name is required!");
+    }
+    if (message === "") {
+      setMessageError("Message is required!");
+    }
+
+    if (
+      name !== "" &&
+      phone !== "" &&
+      email !== "" &&
+      organization !== "" &&
+      message !== ""
+    ) {
+      console.log({
+        name,
+        phone,
+        email,
+        organization,
+        message,
+      });
+    }
+  };
+
   return (
     <>
       <section id="contact" className="contect__wraper__main">
@@ -17,32 +57,48 @@ export default function ContectSection() {
               Request for a call back
             </div>
             <div className="contect__contaier__col__form">
-              <form onSubmit={handleSubmit(onSubmit)}>
+              <form onSubmit={submitHandler}>
                 <div className="input__wraper">
                   <div className="input__wraper__entry">
                     <input
-                      {...register("firstname", { required: true })}
                       className="input__wraper__entry__input"
                       type="text"
                       placeholder="Name"
+                      name="name"
+                      defaultValue={name}
+                      onChange={(e) => {
+                        setName(e.target.value);
+                        if (e.target.value === "") {
+                          setNameError(
+                            "Name must be at least 3 characters long!"
+                          );
+                        } else {
+                          setNameError("");
+                        }
+                      }}
                     />
-
                     <div className="input__wraper__entry__error">
-                      {errors.name?.message}
+                      {nameError}
                     </div>
                   </div>
                   <div className="input__wraper__entry">
                     <input
-                      {...register("firstname", {
-                        required: "This is required.",
-                        minLength: 11,
-                      })}
                       className="input__wraper__entry__input"
                       type="tel"
                       placeholder="Phone"
+                      name="phone"
+                      defaultValue={phone}
+                      onChange={(e) => {
+                        setPhone(e.target.value);
+                        if (e.target.value === "") {
+                          setPhoneError("Phone number must be 10 digits long!");
+                        } else {
+                          setPhoneError("");
+                        }
+                      }}
                     />
                     <div className="input__wraper__entry__error">
-                      The field is required
+                      {phoneError}
                     </div>
                   </div>
                 </div>
@@ -52,34 +108,61 @@ export default function ContectSection() {
                       className="input__wraper__entry__input"
                       type="text"
                       placeholder="Email"
-                      {...register("Email", {
-                        required: true,
-                        pattern: /^\S+@\S+$/i,
-                      })}
+                      name="email"
+                      defaultValue={email}
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+                        if (e.target.value === "") {
+                          setEmailError("Email is required!");
+                        } else {
+                          setEmailError("");
+                        }
+                      }}
                     />
                     <div className="input__wraper__entry__error">
-                      The field is required
+                      {emailError}
                     </div>
                   </div>
-
                   <div className="input__wraper__entry">
                     <input
                       className="input__wraper__entry__input"
                       type="text"
                       placeholder="Organization Name"
+                      name="organization"
+                      defaultValue={organization}
+                      onChange={(e) => {
+                        setOrganization(e.target.value);
+                        if (e.target.value === "") {
+                          setOrganizationError(
+                            "Organization name is required!"
+                          );
+                        } else {
+                          setOrganizationError("");
+                        }
+                      }}
                     />
                     <div className="input__wraper__entry__error">
-                      The field is required
+                      {organizationError}
                     </div>
                   </div>
                 </div>
-                <div className="input__wraper">
+                <div className="input__wraper input__wraper__textarea">
                   <textarea
-                    className="input__wraper__entry__input"
+                    className="input__wraper__entry__input input__wraper__entry__input__textarea"
                     placeholder="Message here..."
+                    name="message"
+                    defaultValue={message}
+                    onChange={(e) => {
+                      setMessage(e.target.value);
+                      if (e.target.value === "") {
+                        setMessageError("Message is required!");
+                      } else {
+                        setMessageError("");
+                      }
+                    }}
                   />
                   <div className="input__wraper__entry__error">
-                    The field is required
+                    {messageError}
                   </div>
                 </div>
                 <div className="btn__md__more">
