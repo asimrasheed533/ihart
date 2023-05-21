@@ -1,5 +1,5 @@
 import "animate.css";
-
+import Fade from "react-reveal/Fade";
 import Bannermain from "../compounts/Bannermain";
 import { ClinicalTrials } from "../assets/ClinicalTrials";
 import { Conference } from "../assets/Conference";
@@ -88,34 +88,38 @@ export default function Index() {
       />
       <div className="innovative__content__wraper">
         <div className="Innovative__heading">
-          Innovative and Unique Solutions
+          <Fade bottom>Innovative and Unique Solutions</Fade>
         </div>
         <div className="Innovative__heading__sub">
-          Innovations in Healthcare Advocacy, Research and Training (I-HART) is
-          an innovative full service global consultancy service offering total
-          health care solutions across the spectrum of healthcare planning,
-          strategy, operations, implementation and quality improvement,
-          assurance and control. <br />
-          <br /> I-HART is dedicated to providing transformative and unique
-          solutions to all sectors of the healthcare industry. Potential clients
-          who can benefit from I-HART include academic health centers, medical
-          schools/colleges, hospitals, clinics/polyclinics, pharmaceutical
-          companies, consultancy firms, governments and non-governmental
-          organizations.
+          <Fade bottom>
+            Innovations in Healthcare Advocacy, Research and Training (I-HART)
+            is an innovative full service global consultancy service offering
+            total health care solutions across the spectrum of healthcare
+            planning, strategy, operations, implementation and quality
+            improvement, assurance and control. <br />
+            <br /> I-HART is dedicated to providing transformative and unique
+            solutions to all sectors of the healthcare industry. Potential
+            clients who can benefit from I-HART include academic health centers,
+            medical schools/colleges, hospitals, clinics/polyclinics,
+            pharmaceutical companies, consultancy firms, governments and
+            non-governmental organizations.
+          </Fade>
         </div>
       </div>
       <div className="training__card__container__main">
-        <div className="training__card__container">
-          {trainingData.map((item, index) => (
-            <TraningCard
-              key={index}
-              svg={item.svg}
-              heading={item.heading}
-              link={item.link}
-              subheading={item.subheading}
-            />
-          ))}
-        </div>
+        <Fade bottom>
+          <div className="training__card__container">
+            {trainingData.map((item, index) => (
+              <TraningCard
+                key={index}
+                svg={item.svg}
+                heading={item.heading}
+                link={item.link}
+                subheading={item.subheading}
+              />
+            ))}
+          </div>
+        </Fade>
       </div>
     </>
   );

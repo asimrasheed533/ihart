@@ -194,6 +194,12 @@ body {
   max-width: 1366px;
   margin: 0 auto;
 }
+img {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: -webkit-optimize-contrast;
+}
 .banner__img {
   width: 65%;
   height: 405px;
@@ -280,9 +286,11 @@ body {
   transition: 0.3s ease-in-out;
 }
 .traning__card__text__wraper:hover {
+  background-color: #c33d44;
   transition: 0.3s ease-in-out;
   box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px;
 }
+
 .training__card__container__row {
   width: 100%;
   display: flex;

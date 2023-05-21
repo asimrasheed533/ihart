@@ -16,6 +16,7 @@ import cl8 from "../assets/cl8.png";
 import cl9 from "../assets/cl9.png";
 import client from "../assets/client.png";
 import { Head } from "../../modules";
+import Fade from "react-reveal/Fade";
 
 export default function Client() {
   return (
