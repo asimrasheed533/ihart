@@ -123,18 +123,17 @@ export default function About() {
           </div>
         </section>
       </Fade>
-      <Fade bottom>
-        <div className="about__md">
-          <div className="about__md__img">
-            <img src={mdimg} alt="image" />
-            <div className="about__md__heading">Fauzia Anjum Vohra</div>
-            <div className="about__md__sub__heading">Managing Director</div>
-            <div className="about__md__learn" onClick={() => setIsOpen(true)}>
-              Read More
-            </div>
+
+      <div className="about__md">
+        <div className="about__md__img">
+          <img src={mdimg} alt="image" />
+          <div className="about__md__heading">Fauzia Anjum Vohra</div>
+          <div className="about__md__sub__heading">Managing Director</div>
+          <div className="about__md__learn" onClick={() => setIsOpen(true)}>
+            Read More
           </div>
         </div>
-      </Fade>
+      </div>
     </>
   );
 }
