@@ -1,5 +1,5 @@
 import Bannermain from "../compounts/Bannermain";
-import about from "../assets/about.png";
+import about from "../assets/about.jpg";
 import discovery from "../assets/discovery.png";
 import mdimg from "../assets/mdimg.png";
 import profit from "../assets/profit.png";

@@ -1,6 +1,6 @@
 import Bannermain from "../compounts/Bannermain";
 import { Outlet } from "react-router-dom";
-import solution from "../assets/solution.png";
+import solution from "../assets/solution.jpg";
 import { Head } from "../../modules";
 
 export default function Solution() {
