@@ -28,60 +28,94 @@ export default function Client() {
         subheading="Providing Innovative Healthcare Solutions for Safer, Better Care of all Patients."
       />
       <div className="client__content__wraper">
-        <div className="client__content__wraper__heading">Our Clients</div>
-        <div className="client__content__wraper__sub__heading">
-          We have provided consultative services, shared solutions or developed
-          programs for various organizations across the globe. A few
-          organizations who we have provided consultations, advised or worked
-          with, are listed below.
-        </div>
+        <Fade bottom>
+          <div className="client__content__wraper__heading">Our Clients</div>
+        </Fade>
+        <Fade bottom>
+          <div className="client__content__wraper__sub__heading">
+            We have provided consultative services, shared solutions or
+            developed programs for various organizations across the globe. A few
+            organizations who we have provided consultations, advised or worked
+            with, are listed below.
+          </div>
+        </Fade>
       </div>
       <div className="client__img__container">
-        <div className="client__img__container__img">
-          <img src={cl1} alt="clients" />
-        </div>
-        <div className="client__img__container__img">
-          <img src={cl2} alt="clients" />
-        </div>
-        <div className="client__img__container__img">
-          <img src={cl3} alt="clients" />
-        </div>
-        <div className="client__img__container__img">
-          <img src={cl4} alt="clients" />
-        </div>
-        <div className="client__img__container__img">
-          <img src={cl5} alt="clients" />
-        </div>
-        <div className="client__img__container__img">
-          <img src={cl6} alt="clients" />
-        </div>
-        <div className="client__img__container__img">
-          <img src={cl7} alt="clients" />
-        </div>
-        <div className="client__img__container__img">
-          <img src={cl8} alt="clients" />
-        </div>
-        <div className="client__img__container__img">
-          <img src={cl9} alt="clients" />
-        </div>
-        <div className="client__img__container__img">
-          <img src={cl10} alt="clients" />
-        </div>
-        <div className="client__img__container__img">
-          <img src={cl11} alt="clients" />
-        </div>
-        <div className="client__img__container__img">
-          <img src={cl12} alt="clients" />
-        </div>
-        <div className="client__img__container__img">
-          <img src={cl13} alt="clients" />
-        </div>
-        <div className="client__img__container__img">
-          <img src={cl14} alt="clients" />
-        </div>
-        <div className="client__img__container__img">
-          <img src={cl15} alt="clients" />
-        </div>
+        <Fade bottom>
+          <div className="client__img__container__img">
+            <img src={cl1} alt="clients" />
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="client__img__container__img">
+            <img src={cl2} alt="clients" />
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="client__img__container__img">
+            <img src={cl3} alt="clients" />
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="client__img__container__img">
+            <img src={cl4} alt="clients" />
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="client__img__container__img">
+            <img src={cl5} alt="clients" />
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="client__img__container__img">
+            <img src={cl6} alt="clients" />
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="client__img__container__img">
+            <img src={cl7} alt="clients" />
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="client__img__container__img">
+            <img src={cl8} alt="clients" />
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="client__img__container__img">
+            <img src={cl9} alt="clients" />
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="client__img__container__img">
+            <img src={cl10} alt="clients" />
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="client__img__container__img">
+            <img src={cl11} alt="clients" />
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="client__img__container__img">
+            <img src={cl12} alt="clients" />
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="client__img__container__img">
+            <img src={cl13} alt="clients" />
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="client__img__container__img">
+            <img src={cl14} alt="clients" />
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="client__img__container__img">
+            <img src={cl15} alt="clients" />
+          </div>
+        </Fade>
       </div>
     </>
   );
