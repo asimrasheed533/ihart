@@ -107,19 +107,17 @@ export default function Index() {
         </div>
       </div>
       <div className="training__card__container__main">
-        <Fade bottom>
-          <div className="training__card__container">
-            {trainingData.map((item, index) => (
-              <TraningCard
-                key={index}
-                svg={item.svg}
-                heading={item.heading}
-                link={item.link}
-                subheading={item.subheading}
-              />
-            ))}
-          </div>
-        </Fade>
+        <div className="training__card__container">
+          {trainingData.map((item, index) => (
+            <TraningCard
+              key={index}
+              svg={item.svg}
+              heading={item.heading}
+              link={item.link}
+              subheading={item.subheading}
+            />
+          ))}
+        </div>
       </div>
     </>
   );
