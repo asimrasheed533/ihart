@@ -1154,6 +1154,9 @@ img {
   }
 }
 @media (max-width: 550px) {
+  .input__wraper textarea {
+    width: 100%;
+  }
   .popup__container {
     height: 90%;
     overflow-y: auto;
