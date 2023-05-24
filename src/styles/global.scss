@@ -1160,6 +1160,158 @@ img {
   object-fit: cover;
   margin: 0.4em;
 }
+.covid__card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2em 3em;
+}
+.covid__card__text__row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.covid__card__text__row__heading {
+  color: #484848;
+  font-size: 22px;
+  font-weight: 700;
+}
+.covid__card__text__row__user__wrpaer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.covid__card__text__row__user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.3em 0.5em;
+}
+.covid__card__text__row__user__avatar__name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #025294;
+  margin-left: 0.4em;
+}
+.Publications__row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.Publications__row__text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #5a6163;
+  margin: 0.4em 0em;
+}
+.Publications__row__link {
+  font-size: 18px;
+  font-weight: 600;
+  color: #025294;
+  margin: 0.4em 0em;
+  text-decoration: none;
+}
+.Publications__row__date {
+  font-size: 18px;
+  font-weight: 600;
+  color: #5a6163;
+  margin: 0.4em 0em;
+}
+.covid__card__overview__row {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1em 2em;
+}
+.covid__card__overview__row__left {
+  display: flex;
+  justify-content: center;
+  width: 65%;
+}
+.covid__card__overview__img__wraper img {
+  height: 300px;
+  width: 250px;
+}
+.covid__card__overview__img__btn {
+  background-color: $secondary;
+  color: white;
+  padding: 4px 9px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  margin: 0.4em 0em;
+  transition: 0.3s ease-in-out;
+}
+.btn__download {
+  background-color: $secondary;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+  margin: 0.4em;
+  transition: 0.3s ease-in-out;
+}
+.btn__download:hover {
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.covid__card__overview__text {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 1em;
+}
+.covid__card__overview__text__heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 0.4em;
+}
+.covid__card__overview__text__heading__text {
+  line-height: 25px;
+}
+.covid__card__overview__text__version {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.covid__card__overview__text__version__heading {
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 0.4em;
+  margin-top: 0.4em;
+}
+.covid__card__overview__text__version__sub__heading {
+  font-weight: 600;
+  color: #025294;
+  margin: 0.4em 0em;
+}
+.covid__card__overview__row__right {
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.covid__card__team__content__svg__wraper {
+  display: flex;
+  align-items: center;
+}
 @media (max-width: 1200px) {
   .contect__contaier__col {
     width: 55%;
