@@ -948,16 +948,22 @@ img {
   flex-wrap: wrap;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 2em 3em;
+  padding: 0em 3em;
 }
 .blog__card__text {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 1em 0em;
+  padding: 0.4em 0em;
 }
-
+.blog__svg__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 12px 0px;
+}
 .blog__card__wraper {
   display: flex;
   align-items: center;
@@ -1001,7 +1007,6 @@ img {
 .blog__card__wraper__sub__heading {
   font-size: 14px;
   color: #8e9394;
-  margin: 12px 0px;
 }
 .blog__card__wraper__text {
   text-align: center;
@@ -1056,6 +1061,31 @@ img {
   padding-top: 1em;
   padding-right: 1em;
   cursor: pointer;
+}
+.event__filter__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2em 3em;
+  flex-wrap: wrap;
+}
+.event__filter__btn {
+  padding: 12px 20px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+  margin: 0.4em;
+  transition: 0.3s ease-in-out;
+}
+.event__filter__btn:hover {
+  background-color: $primary;
+  color: white;
+  transition: 0.3s ease-in-out;
 }
 @media (max-width: 1200px) {
   .contect__contaier__col {

@@ -286,7 +286,7 @@ export default function Header() {
                       }
                     }}
                     className="header__navbar__link"
-                    to="/news"
+                    to="/event"
                   >
                     News/Events
                   </NavLink>
