@@ -3,11 +3,12 @@ import Fade from "react-reveal/Fade";
 import spk from "../assets/spk.png";
 import video from "../assets/video.png";
 import ppt from "../assets/ppt.png";
-export default function BlogCard({ blog, heading, subheading, text }) {
+import { Link } from "react-router-dom";
+export default function BlogCard({ blog, heading, subheading, text, link }) {
   return (
     <>
       <Fade bottom>
-        <div className="blog__card__wraper">
+        <Link to={link} className="blog__card__wraper">
           <div className="blog__card__wraper__img">
             <img src={blog} alt="blogs" />
           </div>
@@ -27,7 +28,7 @@ export default function BlogCard({ blog, heading, subheading, text }) {
               <img src={video} alt="ppt" />
             </div>
           </div>
-        </div>
+        </Link>
       </Fade>
     </>
   );

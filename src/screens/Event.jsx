@@ -21,42 +21,28 @@ export default function Event() {
       </div>
       <div className="blog__card__container">
         <BlogCard
+          link="/EventDetails"
           blog={blog}
           heading="Lorem lorem"
           subheading="April 24, 2022 - 5 min read"
           text="-HART is dedicated to providing innovative and unique solutions"
         />
         <BlogCard
+          link="/event-details"
           blog={blog}
           heading="Lorem lorem"
           subheading="April 24, 2022 - 5 min read"
           text="-HART is dedicated to providing innovative and unique solutions"
         />
         <BlogCard
+          link="/event-details"
           blog={blog}
           heading="Lorem lorem"
           subheading="April 24, 2022 - 5 min read"
           text="-HART is dedicated to providing innovative and unique solutions"
         />
         <BlogCard
-          blog={blog}
-          heading="Lorem lorem"
-          subheading="April 24, 2022 - 5 min read"
-          text="-HART is dedicated to providing innovative and unique solutions"
-        />
-        <BlogCard
-          blog={blog}
-          heading="Lorem lorem"
-          subheading="April 24, 2022 - 5 min read"
-          text="-HART is dedicated to providing innovative and unique solutions"
-        />
-        <BlogCard
-          blog={blog}
-          heading="Lorem lorem"
-          subheading="lorem lorem loreem"
-          text="-HART is dedicated to providing innovative and unique solutions"
-        />
-        <BlogCard
+          link="/event-details"
           blog={blog}
           heading="Lorem lorem"
           subheading="April 24, 2022 - 5 min read"
