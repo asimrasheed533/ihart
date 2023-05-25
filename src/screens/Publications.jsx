@@ -123,7 +123,9 @@ export default function Publications() {
               WHO REFRENCE NUMBERS
             </div>
             <div className="covid__card__team__content__sub__heading">
-              WHO/2019-NcOv/Community_Actions/2021.1
+              WHO/2019-NcOv/
+              <br />
+              Community_Actions/2021.1
             </div>
             <div className="covid__card__team__content__heading">
               REFRENCE NUMBERS
@@ -148,6 +150,27 @@ export default function Publications() {
                     r="15.1787"
                     stroke="black"
                     stroke-width="1.96685"
+                  />
+                </svg>
+              </div>
+              <div className="covid__card__team__content__svg">
+                <svg
+                  width="33"
+                  height="34"
+                  viewBox="0 0 33 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="16.5137"
+                    cy="16.9019"
+                    r="15.1787"
+                    stroke="black"
+                    stroke-width="1.96685"
+                  />
+                  <path
+                    d="M14.5675 8.42585C14.5675 7.35068 15.4386 6.47949 16.5138 6.47949C17.589 6.47949 18.4602 7.35068 18.4602 8.42585C18.4602 9.50102 17.589 10.3722 16.5138 10.3722C15.4386 10.3722 14.5675 9.50102 14.5675 8.42585ZM20.4065 19.7148H18.8495V25.1646H17.2924V19.7148H15.7353V25.1646H14.1782V19.7148H12.6211V13.4864C12.6211 12.1987 13.669 11.1508 14.9567 11.1508H18.0709C19.3586 11.1508 20.4065 12.1987 20.4065 13.4864V19.7148Z"
+                    fill="black"
                   />
                 </svg>
               </div>

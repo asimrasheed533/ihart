@@ -1312,6 +1312,19 @@ img {
   display: flex;
   align-items: center;
 }
+.covid__card__team__content__svg {
+  margin-right: 6px;
+}
+.covid__card__team__content__heading {
+  font-size: 16px;
+  font-weight: 700;
+  color: #025294;
+  margin-bottom: 0.4em;
+}
+.covid__card__team__content__sub__heading {
+  margin-bottom: 1em;
+  color: #575757;
+}
 @media (max-width: 1200px) {
   .contect__contaier__col {
     width: 55%;
