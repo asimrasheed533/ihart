@@ -5,78 +5,119 @@ import ilogo from "../assets/ilogo.png";
 import { X } from "./X";
 import { Y } from "./Y";
 
-const dropdown = [
+const links = [
   {
-    label: "Training in Quality & Safety",
-    link: "/traning",
+    label: "Home",
+    link: "/",
   },
   {
-    label: "Monitoring Patient Safety",
-    link: "/monitoring",
+    label: "About Us",
+    link: "/about",
+    children: [
+      {
+        label: "Introduction",
+        scrollTo: "introduction",
+      },
+      {
+        label: "Value Proposition",
+        scrollTo: "value",
+      },
+      {
+        label: "Our Team",
+        scrollTo: "team",
+      },
+    ],
   },
   {
-    label: "Reducing Variance",
-    link: "/reducing",
+    label: "Services",
+    link: "/services",
+    children: [
+      {
+        label: "Scope",
+        scrollTo: "scope",
+      },
+      {
+        label: "Range of Services",
+        scrollTo: "range",
+      },
+    ],
   },
   {
-    label: "Clinical Training Programs",
-    link: "/clinical",
+    label: "Solutions",
+    link: "/solution",
+    children: [
+      {
+        label: "Training in Quality & Safety",
+        link: "/traning",
+      },
+      {
+        label: "Monitoring Patient Safety",
+        link: "/monitoring",
+      },
+      {
+        label: "Reducing Variance",
+        link: "/reducing",
+      },
+      {
+        label: "Clinical Training Programs",
+        link: "/clinical",
+      },
+      {
+        label: "Research Infrastructure",
+        link: "/research",
+      },
+      {
+        label: "Clinical Trials",
+        link: "/clinicaltrials",
+      },
+      {
+        label: "Enterprise QIPS Setup",
+        link: "/enterprise",
+      },
+      {
+        label: "CME/CPD Conferences",
+        link: "/conferences",
+      },
+      {
+        label: "Executive Training Academy",
+        link: "/executive",
+      },
+    ],
   },
   {
-    label: "Research Infrastructure",
-    link: "/research",
+    label: "Publications",
+    link: "/publications",
   },
   {
-    label: "Clinical Trials",
-    link: "/clinicaltrials",
+    label: "Clients",
+    link: "/client",
   },
   {
-    label: "Enterprise QIPS Setup",
-    link: "/enterprise",
+    label: "News & Events",
+    link: "/event",
   },
   {
-    label: "CME/CPD Conferences",
-    link: "/conferences",
-  },
-  {
-    label: "Executive Training Academy",
-    link: "/executive",
+    label: "Contact Us",
+    scrollTo: "contact",
   },
 ];
-const aboutdrop = [
-  {
-    label: "Introduction",
-    link: "introduction",
-  },
-  {
-    label: "Value Proposition",
-    link: "value",
-  },
-  {
-    label: "Our Team",
-    link: "team",
-  },
-];
-const servicesdrop = [
-  {
-    label: "Scope",
-    link: "scope",
-  },
-  {
-    label: "Range of Services",
-    link: "range",
-  },
-];
+
 export default function Header() {
   const navigate = useNavigate();
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  useLayoutEffect(() => {
+  const handleResize = () => {
     if (window.innerWidth <= 1000) {
       setIsNavOpen(false);
     } else {
       setIsNavOpen(true);
     }
+  };
+
+  useLayoutEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -133,150 +174,72 @@ export default function Header() {
               />
             </svg>
           </Link>
-
           <div className="header__upper__container">
             {isNavOpen ? (
               <div className="header__entries">
-                <NavLink
-                  end
-                  className="header__navbar__link"
-                  to="/"
-                  onClick={() => {
-                    if (window.innerWidth <= 1000) {
-                      setIsNavOpen(false);
-                    }
-                  }}
-                >
-                  Home
-                </NavLink>
-                <div className="header__navbar__link__parent">
-                  <NavLink
-                    onClick={() => {
-                      if (window.innerWidth <= 1000) {
-                        setIsNavOpen(false);
-                      }
-                    }}
-                    className="header__navbar__link"
-                    to="/about"
-                  >
-                    About Us
-                  </NavLink>
-
-                  <div className="header__navbar__link__dropdown">
-                    {aboutdrop.map((item) => (
-                      <Link
-                        to="/about"
-                        onClick={() => {
-                          setTimeout(() => {
-                            document.getElementById(item.link).scrollIntoView();
-                          }, 100);
-                          if (window.innerWidth <= 1000) {
-                            setIsNavOpen(false);
-                          }
-                        }}
-                        className="header__navbar__link__dropdown__link"
-                      >
-                        {item.label}
-                      </Link>
-                    ))}
+                {links?.map((link) => (
+                  <div className="header__navbar__link__parent">
+                    <NavLink
+                      end
+                      className="header__navbar__link"
+                      to={link.link}
+                      onClick={() => {
+                        link.scrollTo &&
+                          setTimeout(
+                            () =>
+                              document
+                                .getElementById(link.scrollTo)
+                                .scrollIntoView(),
+                            100
+                          );
+                        window.innerWidth <= 1000 && setIsNavOpen(false);
+                      }}
+                    >
+                      {link.label}
+                    </NavLink>
+                    <div className="header__navbar__link__dropdown">
+                      {link?.children?.map((item) =>
+                        item.link === undefined ? (
+                          <Link
+                            onClick={() => {
+                              item.scrollTo &&
+                                setTimeout(
+                                  () =>
+                                    document
+                                      .getElementById(item.scrollTo)
+                                      .scrollIntoView(),
+                                  100
+                                );
+                              window.innerWidth <= 1000 && setIsNavOpen(false);
+                            }}
+                            to={link.link}
+                            className="header__navbar__link__dropdown__link"
+                          >
+                            {item.label}
+                          </Link>
+                        ) : (
+                          <NavLink
+                            onClick={() => {
+                              item.scrollTo &&
+                                setTimeout(
+                                  () =>
+                                    document
+                                      .getElementById(item.scrollTo)
+                                      .scrollIntoView(),
+                                  100
+                                );
+                              window.innerWidth <= 1000 && setIsNavOpen(false);
+                            }}
+                            to={link.link + item.link}
+                            className="header__navbar__link__dropdown__link"
+                          >
+                            {item.label}
+                          </NavLink>
+                        )
+                      )}
+                    </div>
                   </div>
-                </div>
-                <div className="header__navbar__link__parent">
-                  <NavLink
-                    onClick={() => {
-                      if (window.innerWidth <= 1000) {
-                        setIsNavOpen(false);
-                      }
-                    }}
-                    end
-                    className="header__navbar__link"
-                    to="/services"
-                  >
-                    Services
-                  </NavLink>
-                  <div className="header__navbar__link__dropdown">
-                    {servicesdrop.map((item) => (
-                      <Link
-                        to="/services"
-                        className="header__navbar__link__dropdown__link"
-                        onClick={() =>
-                          setTimeout(() => {
-                            document.getElementById(item.link).scrollIntoView();
-                          }, 100)
-                        }
-                      >
-                        {item.label}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-                <div className="header__navbar__link__parent">
-                  <NavLink className="header__navbar__link" to="/solution">
-                    Solutions
-                  </NavLink>
-                  <div className="header__navbar__link__dropdown">
-                    {dropdown.map((item) => (
-                      <NavLink
-                        onClick={() => {
-                          if (window.innerWidth <= 1000) {
-                            setIsNavOpen(false);
-                          }
-                        }}
-                        to={"/solution" + item.link}
-                        className="header__navbar__link__dropdown__link"
-                      >
-                        {item.label}
-                      </NavLink>
-                    ))}
-                  </div>
-                </div>
-                <NavLink
-                  onClick={() => {
-                    if (window.innerWidth <= 1000) {
-                      setIsNavOpen(false);
-                    }
-                  }}
-                  className="header__navbar__link"
-                  to="/publications"
-                >
-                  Publications
-                </NavLink>
-                <NavLink
-                  onClick={() => {
-                    if (window.innerWidth <= 1000) {
-                      setIsNavOpen(false);
-                    }
-                  }}
-                  className="header__navbar__link"
-                  to="/client"
-                >
-                  Clients
-                </NavLink>
-                <NavLink
-                  onClick={() => {
-                    if (window.innerWidth <= 1000) {
-                      setIsNavOpen(false);
-                    }
-                  }}
-                  className="header__navbar__link"
-                  to="/event"
-                >
-                  News/Events
-                </NavLink>
-                <Link
-                  className="header__navbar__link"
-                  to="/"
-                  onClick={() => {
-                    setTimeout(() => {
-                      document.getElementById("contact").scrollIntoView();
-                    }, 100);
-                    if (window.innerWidth <= 1000) {
-                      setIsNavOpen(false);
-                    }
-                  }}
-                >
-                  Contact Us
-                </Link>
+                ))}
               </div>
             ) : null}
             <div className="header__upper__nav__container">
@@ -332,7 +295,6 @@ export default function Header() {
               </div>
             </div>
           </div>
-
           <div
             className="header__menu"
             onClick={() => setIsNavOpen(!isNavOpen)}
