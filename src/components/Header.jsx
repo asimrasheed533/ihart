@@ -107,7 +107,7 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const handleResize = () => {
-    if (window.innerWidth <= 1000) {
+    if (window.innerWidth <= 1100) {
       setIsNavOpen(false);
     } else {
       setIsNavOpen(true);
@@ -149,26 +149,26 @@ export default function Header() {
                 fill="#005294"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M19.6 7.20117C4.7 17.3012 -2.9 36.2012 2 54.6012C8.3 77.9012 32.2 91.8012 55.6 85.5012C74.6 80.4012 87.4 63.5012 88 44.7012C85.3 60.1012 74 73.3012 58 77.7012C36 83.6012 13.3 70.5012 7.4 48.5012C3.3 33.0012 8.5 17.2012 19.6 7.20117Z"
                 fill="#005294"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M68.5 67.5007C81.1 58.9007 87.5 43.0007 83.3 27.5007C78 7.80066 57.8 -3.89934 38.1 1.40066C22 5.70066 11.3 20.0007 10.7 35.8007C13 22.8007 22.5 11.7007 36.1 8.00066C54.7 3.00066 73.8 14.0007 78.8 32.6007C82.2 45.7007 77.8 59.0007 68.5 67.5007Z"
                 fill="#DF2F35"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M19.9 43.7012C19 41.5012 18.5 39.2012 18.5 36.9012C18.5 28.6012 24.9 22.2012 33.3 22.2012C37.9 22.2012 42.4 24.3012 45.4 27.8012C48.4 24.3012 52.9 22.2012 57.5 22.2012C65.8 22.2012 72.3 28.6012 72.3 36.9012C72.3 39.2012 71.8 41.4012 70.9 43.6012H64.2L62.6 40.9012C62.3 40.4012 61.6 40.5012 61.4 41.1012L59.4 46.7012L58.6 44.2012C58.5 43.9012 58.3 43.7012 58 43.7012H55L53.4 35.9012C53.2 35.1012 52.2 35.2012 52.1 35.9012L50.5 47.9012L50.1 44.2012C50 43.5012 49.3 43.6012 48.8 43.6012L47.6 39.6012C47.4 38.9012 46.4 39.0012 46.3 39.7012L45.6 43.6012H42.6L41.9 40.6012C41.7 39.9012 40.8 39.9012 40.6 40.5012L39.3 44.9012L36.3 29.9012C36.1 29.2012 35.1 29.2012 35 30.0012L32.3 49.1012C32.1 48.3012 31.4 44.1012 30.8 43.8012C30.5 43.7012 25.1 43.7012 19.9 43.7012Z"
                 fill="#005294"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M45.3 71.5008L41.6 67.7008C31.5 58.8008 23.9 52.0008 20.5 45.0008H30L31.8 52.8008C32 53.5008 33 53.5008 33.1 52.7008L35.8 33.8008L38.6 47.7008C38.8 48.4008 39.7 48.4008 39.9 47.8008L41.3 43.2008C41.5 44.0008 41.5 44.9008 42.2 44.9008H46.3C47.1 44.9008 47 43.8008 47.2 42.6008C47.9 44.9008 47.7 44.9008 48.9 44.9008L49.8 53.3008C49.9 54.1008 51 54.1008 51.1 53.4008L52.9 39.9008L53.8 44.4008C53.9 44.7008 54.2 44.9008 54.5 44.9008H57.4L58.6 48.9008C58.8 49.5008 59.6 49.6008 59.8 49.0008L62.1 42.8008C63.2 44.6008 63.2 44.9008 63.9 45.0008C64 45.0008 66.8 45.0008 70.2 45.0008C66.8 52.0008 59.2 58.8008 49.1 67.8008L45.3 71.5008Z"
                 fill="#DF2F35"
               />
@@ -179,65 +179,89 @@ export default function Header() {
               <div className="header__entries">
                 {links?.map((link) => (
                   <div className="header__navbar__link__parent">
-                    <NavLink
-                      end
-                      className="header__navbar__link"
-                      to={link.link}
-                      onClick={() => {
-                        link.scrollTo &&
-                          setTimeout(
-                            () =>
-                              document
-                                .getElementById(link.scrollTo)
-                                .scrollIntoView(),
-                            100
-                          );
-                        window.innerWidth <= 1000 && setIsNavOpen(false);
-                      }}
-                    >
-                      {link.label}
-                    </NavLink>
-                    <div className="header__navbar__link__dropdown">
-                      {link?.children?.map((item) =>
-                        item.link === undefined ? (
-                          <Link
-                            onClick={() => {
-                              item.scrollTo &&
-                                setTimeout(
-                                  () =>
-                                    document
-                                      .getElementById(item.scrollTo)
-                                      .scrollIntoView(),
-                                  100
-                                );
-                              window.innerWidth <= 1000 && setIsNavOpen(false);
-                            }}
-                            to={link.link}
-                            className="header__navbar__link__dropdown__link"
-                          >
-                            {item.label}
-                          </Link>
-                        ) : (
-                          <NavLink
-                            onClick={() => {
-                              item.scrollTo &&
-                                setTimeout(
-                                  () =>
-                                    document
-                                      .getElementById(item.scrollTo)
-                                      .scrollIntoView(),
-                                  100
-                                );
-                              window.innerWidth <= 1000 && setIsNavOpen(false);
-                            }}
-                            to={link.link + item.link}
-                            className="header__navbar__link__dropdown__link"
-                          >
-                            {item.label}
-                          </NavLink>
-                        )
-                      )}
-                    </div>
+                    {link.link === undefined ? (
+                      <Link
+                        onClick={() => {
+                          link.scrollTo &&
+                            setTimeout(
+                              () =>
+                                document
+                                  .getElementById(link.scrollTo)
+                                  .scrollIntoView(),
+                              100
+                            );
+                          window.innerWidth <= 1000 && setIsNavOpen(false);
+                        }}
+                        to="/"
+                        className="header__navbar__link"
+                      >
+                        {link.label}
+                      </Link>
+                    ) : (
+                      <NavLink
+                        end
+                        className="header__navbar__link"
+                        to={link.link}
+                        onClick={() => {
+                          link.scrollTo &&
+                            setTimeout(
+                              () =>
+                                document
+                                  .getElementById(link.scrollTo)
+                                  .scrollIntoView(),
+                              100
+                            );
+                          window.innerWidth <= 1000 && setIsNavOpen(false);
+                        }}
+                      >
+                        {link.label}
+                      </NavLink>
+                    )}
+                    {link?.children?.length > 0 && (
+                      <div className="header__navbar__link__dropdown">
+                        {link?.children?.map((item) =>
+                          item.link === undefined ? (
+                            <Link
+                              onClick={() => {
+                                item.scrollTo &&
+                                  setTimeout(
+                                    () =>
+                                      document
+                                        .getElementById(item.scrollTo)
+                                        .scrollIntoView(),
+                                    100
+                                  );
+                                window.innerWidth <= 1000 &&
+                                  setIsNavOpen(false);
+                              }}
+                              to={link.link}
+                              className="header__navbar__link__dropdown__link"
+                            >
+                              {item.label}
+                            </Link>
+                          ) : (
+                            <NavLink
+                              onClick={() => {
+                                item.scrollTo &&
+                                  setTimeout(
+                                    () =>
+                                      document
+                                        .getElementById(item.scrollTo)
+                                        .scrollIntoView(),
+                                    100
+                                  );
+                                window.innerWidth <= 1000 &&
+                                  setIsNavOpen(false);
+                              }}
+                              to={link.link + item.link}
+                              className="header__navbar__link__dropdown__link"
+                            >
+                              {item.label}
+                            </NavLink>
+                          )
+                        )}
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>

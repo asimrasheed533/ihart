@@ -161,14 +161,14 @@ function Popup({ setIsOpen }) {
               <path
                 d="M13 1L1 13"
                 stroke="black"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M1 1L13 13"
                 stroke="black"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>

@@ -11,7 +11,7 @@ $secondary: #e24149;
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 .header__lower__nav__container {
   display: none;
@@ -31,7 +31,7 @@ body {
 }
 .header__logo {
   color: #121212;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
 }
 .header__logo img {
@@ -159,6 +159,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-bottom: 1em;
 }
 .header__upper__nav__entry {
   display: flex;
@@ -221,14 +222,14 @@ img {
   flex-direction: column;
 }
 .banner__img__text__wraper__heading {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 600;
   text-align: center;
   margin: 0px 0px 0px 12px;
   font-family: "PT Serif", serif;
 }
 .banner__img__text__wraper__sub__heading {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   margin: 12px;
 }
@@ -252,7 +253,7 @@ img {
   font-family: "PT Serif", serif;
 }
 .Innovative__heading__sub {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.5em;
   text-align: center;
   margin: 1em 2.3em;
@@ -261,7 +262,8 @@ img {
 .training__card__container__main {
   padding: 3em 0em;
   width: 100%;
-  background-image: url(../assets/ibg.jpg);
+  background: url(../assets/ibg.jpg), no-repeat;
+  background-size: cover;
 }
 .training__card__container {
   width: 100%;
@@ -304,7 +306,7 @@ img {
   margin-top: -0.7em;
 }
 .training__card__heading {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 1em;
   font-family: "PT Serif", serif;
@@ -326,7 +328,7 @@ img {
   padding: 12px 20px;
   color: black;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
   transition: 0.3s ease-in-out;
   margin-top: 1em;
 }
@@ -350,12 +352,13 @@ img {
   padding: 35px 25px;
   color: white;
 }
+.footer__container__entry {
+  text-align: center;
+  line-height: 150%;
+}
 .footer__container__entry a {
   color: white;
   text-decoration: none;
-}
-.footer__container__entry span {
-  display: block;
 }
 .contect__wraper__main {
   background-color: #f1f3f2;
@@ -373,7 +376,7 @@ img {
 }
 .contect__contaier__col {
   width: 50%;
-  padding: 0em 3em;
+  padding: 0em 1.5em;
 }
 .contect__contaier__col__heading {
   width: 100%;
@@ -444,22 +447,23 @@ img {
 .contect__contaier__col__text__entry {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  margin-bottom: 0.5em;
 }
 .contect__contaier__col__text__entry__heading {
   color: #5a6163;
-  font-weight: 600;
-  margin-bottom: 6px;
+  font-weight: bold;
   font-family: "PT Serif", serif;
-  font-size: 18px;
+  font-size: 16px;
+  margin-right: 0.5em;
+  display: flex;
 }
 .contect__contaier__col__text__entry__sub__heading {
-  font-size: 18px;
+  font-size: 14px;
   color: #5a6163;
 }
 .input__wraper__entry__error {
   color: red;
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 2px;
   width: 100%;
   margin-top: -10px;
@@ -548,7 +552,7 @@ img {
   height: 300px;
 }
 .about__md__heading {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: $primary;
   margin: 12px 0px;
@@ -613,7 +617,7 @@ img {
 }
 .scop__wraper__main__entry span {
   color: $primary;
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
   font-weight: 600;
   margin-right: 0.5em;
@@ -677,7 +681,7 @@ img {
 }
 .our__range__card__heading {
   width: 100%;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: $secondary;
   padding: 20px 18px;
@@ -739,7 +743,7 @@ img {
 }
 .solution__text__wraper__entry {
   margin: 10px 0px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: $primary;
   position: relative;
@@ -758,7 +762,7 @@ img {
 .executive__text__wraper__entry {
   margin: 10px 0px;
   padding-left: 2.4em;
-  font-size: 15px;
+  font-size: 14px;
   position: relative;
   color: #5a6163;
 }
@@ -907,7 +911,7 @@ img {
   flex-direction: column;
 }
 .reducing__contact__container__col__heading {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: #60b4ea;
   margin-bottom: 1em;
@@ -939,7 +943,7 @@ img {
   height: 400px;
 }
 .research__text__sub__heading {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   color: #0e7bd4;
   margin: 12px 0px;
@@ -1004,7 +1008,7 @@ img {
   border-radius: 5px;
 }
 .blog__card__wraper__heading {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: black;
   margin: 5px 0px;
@@ -1043,17 +1047,17 @@ img {
   border-radius: 6px;
   position: relative;
   overflow-y: auto;
-  height: 100%;
+  max-height: 100%;
 }
 .popup__container__heading {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   color: $primary;
   font-family: "PT Serif", serif;
   // margin-bottom: 6px;
 }
 .popup__container__subheading {
-  font-size: 18px;
+  font-size: 20px;
   color: #5a6163;
   margin-bottom: 1em;
   font-style: italic;
@@ -1106,7 +1110,7 @@ img {
   margin-top: 2em;
 }
 .eventdetail__heading {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 800;
   color: black;
 }
@@ -1117,6 +1121,7 @@ img {
   border: 1px solid #c0baba;
   padding: 0.4em 1em;
   margin: 0.4em 1em;
+  text-decoration: none;
 }
 .eventdetail__heading__wraper {
   display: flex;
@@ -1125,7 +1130,7 @@ img {
   flex-wrap: wrap;
 }
 .eventdetail__heading__row__text {
-  font-size: 16px;
+  font-size: 14px;
   color: #5e5e5e;
   margin-left: 0.4em;
   font-weight: 800;
@@ -1161,8 +1166,8 @@ img {
 }
 .eventdetail__img__col img {
   height: 300px;
-  width: 600px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 600px;
   margin: 0.4em;
 }
 .covid__card {
@@ -1171,7 +1176,7 @@ img {
   align-items: center;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 2em 3em;
+  padding: 2em 1.5em;
 }
 .covid__card__text__row {
   width: 100%;
@@ -1181,8 +1186,9 @@ img {
 }
 .covid__card__text__row__heading {
   color: #484848;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 700;
+  margin-bottom: 0.5em;
 }
 .covid__card__text__row__user__wrpaer {
   display: flex;
@@ -1193,10 +1199,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0.3em 0.5em;
+  margin-right: 1em;
 }
 .covid__card__text__row__user__avatar__name {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
   color: #025294;
   margin-left: 0.4em;
@@ -1208,20 +1214,20 @@ img {
   justify-content: flex-start;
 }
 .Publications__row__text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #5a6163;
   margin: 0.4em 0em;
 }
 .Publications__row__link {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: #025294;
   margin: 0.4em 0em;
   text-decoration: none;
 }
 .Publications__row__date {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: #5a6163;
   margin: 0.4em 0em;
@@ -1234,7 +1240,7 @@ img {
   flex-wrap: wrap;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 1em 2em;
+  padding: 1em 1.5em;
 }
 .covid__card__overview__row__left {
   display: flex;
@@ -1255,6 +1261,7 @@ img {
   justify-content: center;
   padding: 7px 20px;
   margin: 7px 0px;
+  text-decoration: none;
 }
 .btn__download {
   text-decoration: none;
@@ -1276,7 +1283,7 @@ img {
   width: 100%;
 }
 .covid__card__overview__text__heading {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   color: black;
   margin-bottom: 0.4em;
@@ -1292,7 +1299,7 @@ img {
   flex-wrap: wrap;
 }
 .covid__card__overview__text__version__heading {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
   color: black;
   margin-bottom: 0.4em;
@@ -1318,7 +1325,7 @@ img {
   margin-right: 6px;
 }
 .covid__card__team__content__heading {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: #025294;
   margin-bottom: 0.4em;
@@ -1330,7 +1337,7 @@ img {
 @media (max-width: 1200px) {
   .covid__card__overview__row {
     flex-direction: column;
-    padding: 1em;
+    padding: 1em 1.5em;
   }
   .covid__card__overview__row__left {
     width: 100%;
@@ -1360,23 +1367,7 @@ img {
     width: 90%;
   }
 }
-@media (max-width: 1000px) {
-  .footer__container__row {
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer__container__entry {
-    margin-bottom: 20px;
-  }
-  .contect__contaier__col {
-    width: 100%;
-  }
-  .banner__img__text__wraper {
-    width: 90%;
-    // height: 230px;
-    padding: 0em;
-  }
-
+@media (max-width: 1100px) {
   .header__upper__nav__container {
     margin: 15px 0px;
     display: flex;
@@ -1434,9 +1425,26 @@ img {
     display: none;
   }
 }
+@media (max-width: 1000px) {
+  .footer__container__row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__container__entry {
+    margin-bottom: 20px;
+  }
+  .contect__contaier__col {
+    width: 100%;
+  }
+  .banner__img__text__wraper {
+    width: 90%;
+    // height: 230px;
+    padding: 0em;
+  }
+}
 @media (max-width: 550px) {
   .covid__card {
-    padding: 1em;
+    padding: 1em 1.5em;
   }
 
   .event__filter__container {
@@ -1446,7 +1454,7 @@ img {
     width: 100%;
   }
   .popup__container {
-    height: 90%;
+    max-height: 90%;
     overflow-y: auto;
   }
   .profit__img img {
@@ -1459,7 +1467,7 @@ img {
     font-size: 20px;
   }
   .reducing__contact__container__col__heading {
-    font-size: 18px;
+    font-size: 20px;
   }
   .solution__text__wraper__heading {
     font-size: 20px;
@@ -1477,14 +1485,14 @@ img {
     flex-direction: column;
   }
   .contect__contaier__col__heading {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 1em;
   }
   .contect__contaier__col__text__heading {
-    font-size: 24px;
+    font-size: 20px;
   }
   .banner__img__text__wraper__heading {
-    font-size: 24px;
+    font-size: 20px;
   }
   .header__navbar__contact {
     display: none;
@@ -1494,17 +1502,13 @@ img {
     flex-direction: column;
   }
   .covid__card__text__row__heading {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (max-width: 700px) {
   .covid__card__overview__text {
     margin: 0;
-    padding: 1em;
     margin-top: 1em;
-  }
-  .covid__card__overview__row__right {
-    padding: 1em;
   }
   .covid__card__overview__img__wraper {
     display: flex;
@@ -1523,13 +1527,13 @@ img {
     display: none;
   }
   .contect__contaier__col__text__entry__sub__heading {
-    font-size: 15px;
+    font-size: 14px;
   }
   .solution__text__wraper__heading {
-    font-size: 24px;
+    font-size: 20px;
   }
   .Innovative__heading {
-    font-size: 24px;
+    font-size: 20px;
   }
   .Innovative__heading__sub {
     font-size: 14px;
@@ -1552,18 +1556,59 @@ img {
     width: 100%;
     word-wrap: break-word;
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
   }
 
   .Publications__row__date {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
   }
   .input__wraper__entry__input__textarea {
     margin-left: -0.3em;
   }
   .header__navbar__link:hover {
     background-color: #fd787f;
+  }
+  .training__card__container {
+    padding: 1em 1.5em;
+  }
+  .traning__card__text__wraper {
+    width: 100%;
+  }
+  .contect__contaier__col {
+    padding-left: 1.5em;
+    padding-right: 0.9em;
+  }
+  .our__range__container__wraper {
+    margin: 15px;
+    width: 100%;
+  }
+  .our__range__card__row {
+    width: 100%;
+  }
+  .our__range__container__heading {
+    padding: 0em 1.5em;
+    font-size: 25px;
+    text-align: center;
+  }
+  .scop__container__heading {
+    text-align: center;
+    width: 100%;
+  }
+  .about__contect__section {
+    padding: 0em 1.5em;
+  }
+  .about__md {
+    padding: 0em 1.2em;
+  }
+  .about__md__img {
+    width: 100%;
+  }
+  .covid__card__overview__img__wraper img {
+    width: 100%;
+  }
+  .covid__card__overview__img__btn {
+    width: 100%;
   }
 }

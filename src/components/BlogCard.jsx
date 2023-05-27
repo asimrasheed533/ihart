@@ -4,11 +4,12 @@ import spk from "../assets/spk.png";
 import video from "../assets/video.png";
 import ppt from "../assets/ppt.png";
 import { Link } from "react-router-dom";
-export default function BlogCard({ blog, heading, subheading, text, link }) {
+
+export default function BlogCard({ blog, heading, subheading, text }) {
   return (
     <>
       <Fade bottom>
-        <Link to={link} className="blog__card__wraper">
+        <Link to="/EventDetails" className="blog__card__wraper">
           <div className="blog__card__wraper__img">
             <img src={blog} alt="blogs" />
           </div>
