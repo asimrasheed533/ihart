@@ -1,4 +1,4 @@
-import Bannermain from "../compounts/Bannermain";
+import Bannermain from "../components/Bannermain";
 import { Outlet } from "react-router-dom";
 import solution from "../assets/solution.jpg";
 import { Head } from "../../modules";

@@ -1,6 +1,6 @@
 import "animate.css";
 import Fade from "react-reveal/Fade";
-import Bannermain from "../compounts/Bannermain";
+import Bannermain from "../components/Bannermain";
 import { ClinicalTrials } from "../assets/ClinicalTrials";
 import { Conference } from "../assets/Conference";
 import { Delivery } from "../assets/Delivery";
@@ -9,7 +9,7 @@ import { Governance } from "../assets/Governance";
 import { MonitoringSvg } from "../assets/MonitoringSvg";
 import { Research } from "../assets/Research";
 import { TrainingSvg } from "../assets/TrainingSvg";
-import TraningCard from "../compounts/Traningcard";
+import TraningCard from "../components/Traningcard";
 import { Upgrading } from "../assets/Upgrading";
 import banner from "../assets/banner.png";
 

@@ -1,4 +1,4 @@
-import Bannermain from "../../compounts/Bannermain";
+import Bannermain from "../../components/Bannermain";
 import quilty from "../../assets/quilty.png";
 import solution from "../../assets/solution.png";
 import { Head } from "../../../modules";

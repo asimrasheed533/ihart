@@ -1,4 +1,4 @@
-import Bannermain from "../compounts/Bannermain";
+import Bannermain from "../components/Bannermain";
 import blog from "../assets/blog.png";
 import { Head } from "../../modules";
 import spk from "../assets/spk.png";

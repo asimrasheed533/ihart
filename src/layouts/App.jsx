@@ -1,7 +1,7 @@
-import ContectSection from "../compounts/ContectSection";
-import Footer from "../compounts/Footer";
+import ContectSection from "../components/ContectSection";
+import Footer from "../components/Footer";
 import { Head } from "@modules";
-import Header from "../compounts/Header";
+import Header from "../components/Header";
 import { Outlet } from "react-router-dom";
 
 export default function App() {

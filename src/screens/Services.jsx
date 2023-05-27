@@ -1,5 +1,5 @@
-import Bannermain from "../compounts/Bannermain";
-import RangeCard from "../compounts/RangeCard";
+import Bannermain from "../components/Bannermain";
+import RangeCard from "../components/RangeCard";
 import service from "../assets/service.png";
 import servicesb from "../assets/servicesb.png";
 import { Head } from "../../modules";

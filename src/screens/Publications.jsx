@@ -1,5 +1,5 @@
-import Bannermain from "../compounts/Bannermain";
-import BlogCard from "../compounts/BlogCard";
+import Bannermain from "../components/Bannermain";
+import BlogCard from "../components/BlogCard";
 import blog from "../assets/blog.png";
 import avatr from "../assets/avatr.png";
 import { Head } from "../../modules";

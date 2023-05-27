@@ -1,4 +1,4 @@
-import Bannermain from "../compounts/Bannermain";
+import Bannermain from "../components/Bannermain";
 import cl1 from "../assets/cl1.png";
 import cl10 from "../assets/cl10.png";
 import cl11 from "../assets/cl11.png";

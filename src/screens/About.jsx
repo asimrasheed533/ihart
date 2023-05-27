@@ -1,4 +1,4 @@
-import Bannermain from "../compounts/Bannermain";
+import Bannermain from "../components/Bannermain";
 import about from "../assets/about.jpg";
 import discovery from "../assets/discovery.png";
 import mdimg from "../assets/mdimg.png";
