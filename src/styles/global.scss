@@ -248,6 +248,7 @@ img {
   font-weight: 600;
   text-align: center;
   color: $primary;
+  padding: 0em 1.4em;
   font-family: "PT Serif", serif;
 }
 .Innovative__heading__sub {
@@ -265,7 +266,7 @@ img {
 .training__card__container {
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 1300px;
@@ -1032,6 +1033,7 @@ img {
   background-color: rgba(0, 0, 0, 0.548);
   border-radius: 5px;
   padding: 20px;
+  z-index: 99999;
 }
 .popup__container {
   width: 700px;
@@ -1535,5 +1537,11 @@ img {
   .Publications__row__date {
     font-weight: 600;
     font-size: 15px;
+  }
+  .input__wraper__entry__input__textarea {
+    margin-left: -0.3em;
+  }
+  .header__navbar__link:hover {
+    background-color: #fd787f;
   }
 }

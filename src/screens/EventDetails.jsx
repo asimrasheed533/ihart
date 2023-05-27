@@ -1,9 +1,10 @@
 import Bannermain from "../components/Bannermain";
 import blog from "../assets/blog.png";
-import { Head } from "../../modules";
+import { Head } from "@modules";
 import spk from "../assets/spk.png";
 import video from "../assets/video.png";
 import ppt from "../assets/ppt.png";
+
 export default function EventDetails() {
   return (
     <>
@@ -12,28 +13,37 @@ export default function EventDetails() {
       <div className="eventdetail__heading__col">
         <div className="eventdetail__heading">Lorem ipsum dolor </div>
         <div className="eventdetail__heading__wraper">
-          <div className="eventdetail__heading__row">
+          <a
+            href="https://www.dickinson.edu/download/downloads/id/1076/sample_powerpoint_slides.pptx"
+            className="eventdetail__heading__row"
+          >
             <div className="eventdetail__heading__row__img">
               <img src={ppt} alt="ppt" />
             </div>
             <div className="eventdetail__heading__row__text">Download PPT</div>
-          </div>
-          <div className="eventdetail__heading__row">
+          </a>
+          <a
+            href="https://file-examples.com/storage/fe629099fc646eff79529f9/2017/11/file_example_MP3_700KB.mp3"
+            className="eventdetail__heading__row"
+          >
             <div className="eventdetail__heading__row__img">
               <img src={spk} alt="ppt" />
             </div>
             <div className="eventdetail__heading__row__text">
               Download Audio
             </div>
-          </div>
-          <div className="eventdetail__heading__row">
+          </a>
+          <a
+            href="https://file-examples.com/wp-content/storage/2018/04/file_example_AVI_480_750kB.avi"
+            className="eventdetail__heading__row"
+          >
             <div className="eventdetail__heading__row__img">
               <img src={video} alt="ppt" />
             </div>
             <div className="eventdetail__heading__row__text">
               Download Video
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div className="text__wraper__conainer">
