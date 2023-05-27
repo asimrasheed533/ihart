@@ -1174,6 +1174,7 @@ img {
   padding: 2em 3em;
 }
 .covid__card__text__row {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1329,6 +1330,7 @@ img {
 @media (max-width: 1200px) {
   .covid__card__overview__row {
     flex-direction: column;
+    padding: 1em;
   }
   .covid__card__overview__row__left {
     width: 100%;
@@ -1433,6 +1435,10 @@ img {
   }
 }
 @media (max-width: 550px) {
+  .covid__card {
+    padding: 1em;
+  }
+
   .event__filter__container {
     flex-direction: column;
   }
@@ -1483,10 +1489,22 @@ img {
   .header__navbar__contact {
     display: none;
   }
+  .header__lower__nav__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .covid__card__text__row__heading {
+    font-size: 18px;
+  }
 }
 @media (max-width: 700px) {
   .covid__card__overview__text {
     margin: 0;
+    padding: 1em;
+    margin-top: 1em;
+  }
+  .covid__card__overview__row__right {
+    padding: 1em;
   }
   .covid__card__overview__img__wraper {
     display: flex;
@@ -1528,12 +1546,16 @@ img {
   .Publications__row {
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
   }
   .Publications__row__link {
+    width: 100%;
+    word-wrap: break-word;
     margin: 0;
     font-size: 16px;
     font-weight: 600;
   }
+
   .Publications__row__date {
     font-weight: 600;
     font-size: 15px;
