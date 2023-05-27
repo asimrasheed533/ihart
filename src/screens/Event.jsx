@@ -6,7 +6,7 @@ import { Head } from "../../modules";
 export default function Event() {
   return (
     <>
-      <Head title="Publications | I-HART" />
+      <Head title="Event | I-HART" />
       <Bannermain
         banner={blog}
         heading="Events/News"

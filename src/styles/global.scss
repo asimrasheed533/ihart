@@ -353,6 +353,9 @@ img {
   color: white;
   text-decoration: none;
 }
+.footer__container__entry span {
+  display: block;
+}
 .contect__wraper__main {
   background-color: #f1f3f2;
   padding: 2em 0em;
@@ -376,7 +379,6 @@ img {
   font-size: 30px;
   font-weight: 600;
   color: $primary;
-  margin-top: 1em;
   font-family: "PT Serif", serif;
 }
 .contect__contaier__col__form {
@@ -402,7 +404,8 @@ img {
   border: none;
   outline: none;
   margin-bottom: 1em;
-  padding-right: 5em;
+  padding-right: 6em;
+  margin-right: 12px;
   // height: 46px;
 }
 .input__wraper__entry__input::-webkit-outer-spin-button,
@@ -415,7 +418,7 @@ img {
 }
 .input__wraper textarea {
   width: calc(100% - 1em);
-  margin-left: -1em;
+
   resize: none;
   padding: 12px;
   border: none;
@@ -1239,23 +1242,18 @@ img {
   height: 300px;
   width: 250px;
 }
+
 .covid__card__overview__img__btn {
+  width: 250px;
   background-color: $secondary;
   color: white;
-  padding: 4px 9px;
-  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
-  cursor: pointer;
-  margin: 0.4em 0em;
-  transition: 0.3s ease-in-out;
+  padding: 7px 20px;
+  margin: 7px 0px;
 }
 .btn__download {
-  background-color: $secondary;
-  color: white;
-  padding: 12px 20px;
   text-decoration: none;
   transition: 0.2s ease-in-out;
   border: none;
@@ -1272,6 +1270,7 @@ img {
   justify-content: flex-start;
   flex-direction: column;
   margin-left: 1em;
+  width: 100%;
 }
 .covid__card__overview__text__heading {
   font-size: 22px;
@@ -1326,6 +1325,16 @@ img {
   color: #575757;
 }
 @media (max-width: 1200px) {
+  .covid__card__overview__row {
+    flex-direction: column;
+  }
+  .covid__card__overview__row__left {
+    width: 100%;
+  }
+  .covid__card__overview__row__right {
+    width: 100%;
+    margin-top: 2em;
+  }
   .contect__contaier__col {
     width: 55%;
   }
@@ -1422,6 +1431,9 @@ img {
   }
 }
 @media (max-width: 550px) {
+  .event__filter__container {
+    flex-direction: column;
+  }
   .input__wraper textarea {
     width: 100%;
   }
@@ -1471,6 +1483,19 @@ img {
   }
 }
 @media (max-width: 700px) {
+  .covid__card__overview__text {
+    margin: 0;
+  }
+  .covid__card__overview__img__wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .covid__card__overview__row__left {
+    display: flex;
+    flex-direction: column;
+  }
   .header__lower__nav__container {
     display: flex;
   }
@@ -1495,5 +1520,20 @@ img {
   .banner__wraper {
     overflow: hidden;
     width: 100%;
+  }
+}
+@media (max-width: 850px) {
+  .Publications__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .Publications__row__link {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .Publications__row__date {
+    font-weight: 600;
+    font-size: 15px;
   }
 }

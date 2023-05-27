@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="footer__contaier">
         <div className="footer__container__row">
           <div className="footer__container__entry">
-            Copyright © 2023. All Rights Reserved. I-HART.
+            Copyright © 2023. All Rights Reserved. <span>I-HART.</span>
           </div>
           <div className="footer__container__entry">
             Design:{" "}
