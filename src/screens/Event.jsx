@@ -1,6 +1,7 @@
 import Bannermain from "../components/Bannermain";
 import BlogCard from "../components/BlogCard";
 import blog from "../assets/blog.png";
+import ScrollContainer from "react-indiana-drag-scroll";
 import { Head } from "../../modules";
 
 export default function Event() {
@@ -12,13 +13,13 @@ export default function Event() {
         heading="Events/News"
         subheading="I-HART is dedicated to providing innovative and unique solutions to all sectors of the healthcare industry"
       />
-      <div className="event__filter__container">
+      <ScrollContainer className="event__filter__container">
         <div className="event__filter__btn">ALL</div>
         <div className="event__filter__btn">Category Name</div>
         <div className="event__filter__btn">Category Name</div>
         <div className="event__filter__btn">Category Name</div>
         <div className="event__filter__btn">Category Name</div>
-      </div>
+      </ScrollContainer>
       <div className="blog__card__container">
         <BlogCard
           blog={blog}

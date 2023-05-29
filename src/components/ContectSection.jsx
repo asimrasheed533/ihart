@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function ContectSection() {
+  const location = useLocation();
   const [name, setName] = useState("");
   const [nameError, setNameError] = useState("");
   const [phone, setPhone] = useState("");
@@ -12,6 +13,14 @@ export default function ContectSection() {
   const [organizationError, setOrganizationError] = useState("");
   const [message, setMessage] = useState("");
   const [messageError, setMessageError] = useState("");
+
+  useEffect(() => {
+    setEmailError("");
+    setNameError("");
+    setPhoneError("");
+    setOrganizationError("");
+    setMessageError("");
+  }, [location]);
 
   const submitHandler = (e) => {
     e.preventDefault();
