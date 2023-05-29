@@ -1108,6 +1108,7 @@ img {
   max-width: 1300px;
   margin: 0 auto;
   margin-top: 2em;
+  padding: 0em 2em;
 }
 .eventdetail__heading {
   font-size: 20px;
@@ -1142,20 +1143,24 @@ img {
   margin-top: 2em;
 }
 .event__detail__text {
+  width: 100%;
+  padding: 1em 2em;
   color: #575757;
 }
 .eventdetail__img {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   max-width: 1366px;
   margin: 0 auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  padding: 2em;
 }
 .eventdetail__img img {
   width: 100%;
+  object-fit: cover;
   height: 450px;
+  margin: 0em 1em;
 }
 .eventdetail__img__row {
   display: flex;
@@ -1167,8 +1172,8 @@ img {
 .eventdetail__img__col img {
   height: 300px;
   width: 100%;
-  max-width: 600px;
-  margin: 0.4em;
+  padding: 0.3em 2em;
+  object-fit: cover;
 }
 .covid__card {
   width: 100%;
@@ -1443,6 +1448,13 @@ img {
   }
 }
 @media (max-width: 550px) {
+  .eventdetail__heading__col {
+    align-items: center;
+    justify-content: center;
+  }
+  .eventdetail__heading {
+    padding: 1em 0em;
+  }
   .covid__card {
     padding: 1em 1.5em;
   }
