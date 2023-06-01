@@ -71,13 +71,6 @@ export default function Index() {
       subheading:
         "Medicine is a profession with life-long learning. The importance of updating physician knowledge on a regular basis is well known and universally agreed upon.",
     },
-    {
-      link: "/executive",
-      svg: <Executives />,
-      heading: "Health Executives Academy for Leadership Support",
-      subheading:
-        "HEALS provides an innovative and strategic training course for senior health care professionals and managers to enable them to lead hospitals, health care systems and medical organizations in the 21st century.",
-    },
   ];
   return (
     <>

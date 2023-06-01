@@ -22,17 +22,7 @@ export default function EventDetails() {
             </div>
             <div className="eventdetail__heading__row__text">Download PPT</div>
           </a>
-          <a
-            href="https://file-examples.com/storage/fe629099fc646eff79529f9/2017/11/file_example_MP3_700KB.mp3"
-            className="eventdetail__heading__row"
-          >
-            <div className="eventdetail__heading__row__img">
-              <img src={spk} alt="ppt" />
-            </div>
-            <div className="eventdetail__heading__row__text">
-              Download Audio
-            </div>
-          </a>
+
           <a
             href="https://file-examples.com/wp-content/storage/2018/04/file_example_AVI_480_750kB.avi"
             className="eventdetail__heading__row"

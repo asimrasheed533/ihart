@@ -275,7 +275,7 @@ img {
   margin: 0 auto;
 }
 .traning__card__text__wraper {
-  width: 28%;
+  width: 20%;
   min-width: 270px;
   min-height: 310px;
   display: flex;
@@ -1175,13 +1175,48 @@ img {
   padding: 0.3em 2em;
   object-fit: cover;
 }
+.search__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1em 1.5em;
+}
+.publication__search__bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1em 0em;
+  border: none;
+}
+.select__wraper select {
+  padding: 0.3em;
+  outline: none;
+  margin-left: 1em;
+}
+.publication__search__bar__entry {
+  width: 350px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #484848;
+  padding: 6px;
+  outline: none;
+}
+// .publication__search__bar__entry::placeholder {
+//   outline: none;
+// }
 .covid__card {
   width: 100%;
   display: flex;
   align-items: center;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 2em 1.5em;
+  padding: 0.4em 1.5em;
 }
 .covid__card__text__row {
   width: 100%;

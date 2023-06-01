@@ -13,6 +13,23 @@ export default function Publications() {
         heading="Latest Publications"
         subheading="I-HART is dedicated to providing innovative and unique solutions to all sectors of the healthcare industry."
       />
+      <div className="search__container">
+        <div className="publication__search__bar">
+          <input
+            type="search"
+            className="publication__search__bar__entry"
+            placeholder="Search..."
+          />
+        </div>
+        <div className="select__wraper">
+          <select name="select">
+            <option>critical </option>
+            <option>readiness </option>
+            <option>response </option>
+          </select>
+        </div>
+      </div>
+
       <PublicationsCard />
       <PublicationsCard />
       <PublicationsCard />
