@@ -25,7 +25,7 @@ export default function EventDetails() {
           </a>
 
           <a
-            href="https://file-examples.com/wp-content/storage/2018/04/file_example_AVI_480_750kB.avi"
+            href="https://youtu.be/XMcab1MFaLc"
             className="eventdetail__heading__row"
             target="_blank"
           >

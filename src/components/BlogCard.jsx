@@ -8,19 +8,19 @@ export default function BlogCard({ blog, heading, subheading, text }) {
   return (
     <>
       <Fade bottom>
-        <Link
-          to="/EventDetails"
-          onClick={() =>
-            window.scrollTo({
-              top: 0,
-              behavior: "smooth", // Optional smooth scrolling animation
-            })
-          }
-          className="blog__card__wraper"
-        >
-          <div className="blog__card__wraper__img">
+        <div className="blog__card__wraper">
+          <Link
+            to="/EventDetails"
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              })
+            }
+            className="blog__card__wraper__img"
+          >
             <img src={blog} alt="blogs" />
-          </div>
+          </Link>
           <div className="blog__card__text">
             <div className="blog__card__wraper__heading">{heading}</div>
             <div className="blog__card__wraper__sub__heading">{subheading}</div>
@@ -28,16 +28,16 @@ export default function BlogCard({ blog, heading, subheading, text }) {
           </div>
           <div className="blog__svg__container">
             <a
-              href="https://file-examples.com/wp-content/storage/2018/04/file_example_AVI_480_750kB.avi  "
+              href="https://www.dickinson.edu/download/downloads/id/1076/sample_powerpoint_slides.pptx"
               className="eventdetail__heading__row"
               target="_blank"
             >
-              <button className="blog__svg__container__svg">
+              <div className="eventdetail__heading__row__img">
                 <img src={ppt} alt="ppt" />
-              </button>
+              </div>
             </a>
             <a
-              href="https://www.dickinson.edu/download/downloads/id/1076/sample_powerpoint_slides.pptx"
+              href="https://youtu.be/XMcab1MFaLc"
               className="eventdetail__heading__row"
               target="_blank"
             >
@@ -46,7 +46,7 @@ export default function BlogCard({ blog, heading, subheading, text }) {
               </button>
             </a>
           </div>
-        </Link>
+        </div>
       </Fade>
     </>
   );

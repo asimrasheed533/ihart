@@ -988,7 +988,6 @@ img {
   padding: 0em 1em;
   width: 300px;
   border-radius: 6px;
-  cursor: pointer;
   text-decoration: none;
   color: black;
 }
@@ -1012,6 +1011,7 @@ img {
   width: 300px;
   object-fit: cover;
   border-radius: 5px;
+  cursor: pointer;
 }
 .blog__card__wraper__heading {
   font-size: 20px;
