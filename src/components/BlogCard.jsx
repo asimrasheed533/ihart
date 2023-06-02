@@ -8,7 +8,16 @@ export default function BlogCard({ blog, heading, subheading, text }) {
   return (
     <>
       <Fade bottom>
-        <Link to="/EventDetails" className="blog__card__wraper">
+        <Link
+          to="/EventDetails"
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth", // Optional smooth scrolling animation
+            })
+          }
+          className="blog__card__wraper"
+        >
           <div className="blog__card__wraper__img">
             <img src={blog} alt="blogs" />
           </div>
@@ -19,20 +28,22 @@ export default function BlogCard({ blog, heading, subheading, text }) {
           </div>
           <div className="blog__svg__container">
             <a
-              href="https://file-examples.com/wp-content/storage/2018/04/file_example_AVI_480_750kB.avi"
+              href="https://file-examples.com/wp-content/storage/2018/04/file_example_AVI_480_750kB.avi  "
               className="eventdetail__heading__row"
+              target="_blank"
             >
-              <div className="blog__svg__container__svg">
+              <button className="blog__svg__container__svg">
                 <img src={ppt} alt="ppt" />
-              </div>
+              </button>
             </a>
             <a
               href="https://www.dickinson.edu/download/downloads/id/1076/sample_powerpoint_slides.pptx"
               className="eventdetail__heading__row"
+              target="_blank"
             >
-              <div className="blog__svg__container__svg">
+              <button className="blog__svg__container__svg">
                 <img src={video} alt="ppt" />
-              </div>
+              </button>
             </a>
           </div>
         </Link>

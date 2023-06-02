@@ -16,6 +16,7 @@ export default function EventDetails() {
           <a
             href="https://www.dickinson.edu/download/downloads/id/1076/sample_powerpoint_slides.pptx"
             className="eventdetail__heading__row"
+            target="_blank"
           >
             <div className="eventdetail__heading__row__img">
               <img src={ppt} alt="ppt" />
@@ -26,6 +27,7 @@ export default function EventDetails() {
           <a
             href="https://file-examples.com/wp-content/storage/2018/04/file_example_AVI_480_750kB.avi"
             className="eventdetail__heading__row"
+            target="_blank"
           >
             <div className="eventdetail__heading__row__img">
               <img src={video} alt="ppt" />

@@ -974,6 +974,10 @@ img {
   justify-content: space-evenly;
   margin: 12px 0px;
 }
+.blog__svg__container__svg {
+  border: none;
+  cursor: pointer;
+}
 .blog__card__wraper {
   display: flex;
   align-items: center;
