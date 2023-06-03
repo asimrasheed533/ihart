@@ -22,6 +22,7 @@ export default function Publications() {
             placeholder="Search..."
           />
         </div>
+        <div className="btn__search">Download</div>
         <div className="select__wraper">
           <select name="select">
             <option>Sort by </option>
