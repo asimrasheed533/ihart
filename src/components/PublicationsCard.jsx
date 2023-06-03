@@ -1,4 +1,5 @@
 import puppaper from "../assets/puppaper.png";
+import doc from "../assets/doc.png";
 import avatr from "../assets/avatr.png";
 
 export function PublicationsCard() {
@@ -8,7 +9,7 @@ export function PublicationsCard() {
       <div className="covid__card__overview__row">
         <div className="covid__card__overview__row__left">
           <div className="covid__card__overview__img__wraper">
-            <img src={puppaper} alt="blog" />
+            <img src={doc} alt="blog" />
             <a
               href="https://www.africau.edu/images/default/sample.pdf"
               className="covid__card__overview__img__btn"
