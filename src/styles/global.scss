@@ -1197,9 +1197,11 @@ img {
   border: none;
 }
 .select__wraper select {
-  padding: 0.3em;
-  outline: none;
   margin-left: 1em;
+  background-color: #f3f3f3;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
 }
 .publication__search__bar__entry {
   width: 350px;
@@ -1208,12 +1210,11 @@ img {
   align-items: center;
   justify-content: flex-start;
   border: 1px solid #484848;
-  padding: 6px;
+  padding: 10px 20px;
   outline: none;
+  border: none;
+  background-color: #f3f3f3;
 }
-// .publication__search__bar__entry::placeholder {
-//   outline: none;
-// }
 .covid__card {
   width: 100%;
   display: flex;
@@ -1230,7 +1231,7 @@ img {
 }
 .covid__card__text__row__heading {
   color: #484848;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 0.5em;
 }
@@ -1285,15 +1286,17 @@ img {
   max-width: 1300px;
   margin: 0 auto;
   padding: 1em 1.5em;
+  border-top: 0.3px solid #f3f3f3;
 }
 .covid__card__overview__row__left {
   display: flex;
   justify-content: center;
-  width: 65%;
+  width: 100%;
 }
 .covid__card__overview__img__wraper img {
   height: 300px;
   width: 250px;
+  object-fit: contain;
 }
 
 .covid__card__overview__img__btn {
@@ -1324,13 +1327,13 @@ img {
   justify-content: flex-start;
   flex-direction: column;
   margin-left: 1em;
-  width: 100%;
+  width: 75%;
 }
 .covid__card__overview__text__heading {
   font-size: 20px;
   font-weight: 600;
   color: black;
-  margin-bottom: 0.4em;
+  margin-top: 1em;
 }
 .covid__card__overview__text__heading__text {
   line-height: 25px;
@@ -1379,6 +1382,32 @@ img {
   margin-bottom: 1em;
   color: #575757;
 }
+.abstract__btn {
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 7px 0px;
+  text-decoration: none;
+}
+.abstract__btn button {
+  width: 250px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 30px;
+  margin: 7px 0px;
+  text-decoration: none;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.abstract__btn button:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transition: 0.3s ease-in-out;
+}
 @media (max-width: 1200px) {
   .covid__card__overview__row {
     flex-direction: column;
@@ -1413,6 +1442,12 @@ img {
   }
 }
 @media (max-width: 1100px) {
+  .covid__card__overview__img__wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
   .header__upper__nav__container {
     margin: 15px 0px;
     display: flex;
@@ -1556,7 +1591,7 @@ img {
     flex-direction: column;
   }
   .covid__card__text__row__heading {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media (max-width: 700px) {
@@ -1567,16 +1602,7 @@ img {
     margin: 0;
     margin-top: 1em;
   }
-  .covid__card__overview__img__wraper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .covid__card__overview__row__left {
-    display: flex;
-    flex-direction: column;
-  }
+
   .header__lower__nav__container {
     display: flex;
   }
@@ -1604,6 +1630,13 @@ img {
   }
 }
 @media (max-width: 850px) {
+  .covid__card__overview__text {
+    width: 100%;
+  }
+  .covid__card__overview__row__left {
+    display: flex;
+    flex-direction: column;
+  }
   .Publications__row {
     flex-direction: column;
     align-items: flex-start;
@@ -1665,6 +1698,6 @@ img {
     width: 100%;
   }
   .covid__card__overview__img__btn {
-    width: 100%;
+    width: 250px;
   }
 }
