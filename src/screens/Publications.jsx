@@ -22,12 +22,15 @@ export default function Publications() {
             placeholder="Search..."
           />
         </div>
-        <div className="btn__search">Download</div>
+        <div className="btn__search">Search</div>
+
         <div className="select__wraper">
           <select name="select">
             <option>Sort by </option>
-            <option>readiness </option>
-            <option>response </option>
+            <option>Most Match</option>
+            <option>Publication Date</option>
+            <option>First Author</option>
+            <option>Journal</option>
           </select>
         </div>
       </div>

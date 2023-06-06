@@ -1214,6 +1214,13 @@ img {
   outline: none;
   border: none;
 }
+.select__wraper option {
+  background-color: #f3f3f3;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}
 .publication__search__bar__entry {
   width: 350px;
   border-radius: 2px;
