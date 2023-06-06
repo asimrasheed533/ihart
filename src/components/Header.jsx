@@ -1,9 +1,9 @@
+import { Fragment, useLayoutEffect, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import { useLayoutEffect, useState } from "react";
 
-import ilogo from "../assets/ilogo.png";
 import { X } from "./X";
 import { Y } from "./Y";
+import ilogo from "../assets/ilogo.png";
 
 const links = [
   {
@@ -177,8 +177,8 @@ export default function Header() {
           <div className="header__upper__container">
             {isNavOpen ? (
               <div className="header__entries">
-                {links?.map((link) => (
-                  <div className="header__navbar__link__parent">
+                {links?.map((link, index) => (
+                  <div className="header__navbar__link__parent" key={index}>
                     {link.link === undefined ? (
                       <Link
                         onClick={() => {
@@ -219,47 +219,49 @@ export default function Header() {
                     )}
                     {link?.children?.length > 0 && (
                       <div className="header__navbar__link__dropdown">
-                        {link?.children?.map((item) =>
-                          item.link === undefined ? (
-                            <Link
-                              onClick={() => {
-                                item.scrollTo &&
-                                  setTimeout(
-                                    () =>
-                                      document
-                                        .getElementById(item.scrollTo)
-                                        .scrollIntoView(),
-                                    100
-                                  );
-                                window.innerWidth <= 1000 &&
-                                  setIsNavOpen(false);
-                              }}
-                              to={link.link}
-                              className="header__navbar__link__dropdown__link"
-                            >
-                              {item.label}
-                            </Link>
-                          ) : (
-                            <NavLink
-                              onClick={() => {
-                                item.scrollTo &&
-                                  setTimeout(
-                                    () =>
-                                      document
-                                        .getElementById(item.scrollTo)
-                                        .scrollIntoView(),
-                                    100
-                                  );
-                                window.innerWidth <= 1000 &&
-                                  setIsNavOpen(false);
-                              }}
-                              to={link.link + item.link}
-                              className="header__navbar__link__dropdown__link"
-                            >
-                              {item.label}
-                            </NavLink>
-                          )
-                        )}
+                        {link?.children?.map((item, index) => (
+                          <Fragment key={index}>
+                            {item.link === undefined ? (
+                              <Link
+                                onClick={() => {
+                                  item.scrollTo &&
+                                    setTimeout(
+                                      () =>
+                                        document
+                                          .getElementById(item.scrollTo)
+                                          .scrollIntoView(),
+                                      100
+                                    );
+                                  window.innerWidth <= 1000 &&
+                                    setIsNavOpen(false);
+                                }}
+                                to={link.link}
+                                className="header__navbar__link__dropdown__link"
+                              >
+                                {item.label}
+                              </Link>
+                            ) : (
+                              <NavLink
+                                onClick={() => {
+                                  item.scrollTo &&
+                                    setTimeout(
+                                      () =>
+                                        document
+                                          .getElementById(item.scrollTo)
+                                          .scrollIntoView(),
+                                      100
+                                    );
+                                  window.innerWidth <= 1000 &&
+                                    setIsNavOpen(false);
+                                }}
+                                to={link.link + item.link}
+                                className="header__navbar__link__dropdown__link"
+                              >
+                                {item.label}
+                              </NavLink>
+                            )}
+                          </Fragment>
+                        ))}
                       </div>
                     )}
                   </div>

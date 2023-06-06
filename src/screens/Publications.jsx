@@ -34,7 +34,6 @@ export default function Publications() {
           </select>
         </div>
       </div>
-
       <PublicationsCard />
       <PublicationsCard />
       <PublicationsCard />

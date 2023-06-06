@@ -1,6 +1,7 @@
 import { Head } from "../../../modules";
 import clinicalimg from "../../assets/clinicalimg.png";
 import Fade from "react-reveal/Fade";
+
 export default function Clinical() {
   return (
     <>

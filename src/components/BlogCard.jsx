@@ -1,10 +1,16 @@
-import React from "react";
 import Fade from "react-reveal/Fade";
-import video from "../assets/video.png";
-import ppt from "../assets/ppt.png";
 import { Link } from "react-router-dom";
+import React from "react";
+import ppt from "../assets/ppt.png";
+import video from "../assets/video.png";
 
-export default function BlogCard({ blog, heading, subheading, text }) {
+export default function BlogCard({
+  blog,
+  heading,
+  subheading,
+  text,
+  onChange,
+}) {
   return (
     <>
       <Fade bottom>
@@ -37,9 +43,10 @@ export default function BlogCard({ blog, heading, subheading, text }) {
               </div>
             </a>
             <a
-              href="https://youtu.be/XMcab1MFaLc"
               className="eventdetail__heading__row"
-              target="_blank"
+              onClick={() =>
+                onChange("https://www.youtube.com/embed/7sDY4m8KNLc")
+              }
             >
               <button className="blog__svg__container__svg">
                 <img src={video} alt="ppt" />
