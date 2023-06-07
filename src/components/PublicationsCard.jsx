@@ -1,5 +1,5 @@
 import puppaper from "../assets/puppaper.png";
-import doc from "../assets/doc.png";
+import doc from "../assets/doc.jpg";
 import avatr from "../assets/avatr.png";
 
 export function PublicationsCard() {

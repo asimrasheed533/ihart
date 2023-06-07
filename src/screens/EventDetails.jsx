@@ -1,13 +1,28 @@
+import { useCallback, useEffect, useState } from "react";
 import Bannermain from "../components/Bannermain";
 import blog from "../assets/blog.png";
 import { Head } from "@modules";
 import spk from "../assets/spk.png";
 import video from "../assets/video.png";
 import ppt from "../assets/ppt.png";
+import ClickAwayListener from "react-click-away-listener";
 
 export default function EventDetails() {
+  const [iframeSrc, setIframeSrc] = useState("");
+  const [showIframe, setShowIframe] = useState(false);
+
+  const showIframeHandler = useCallback((src) => {
+    setIframeSrc(src);
+    setShowIframe(true);
+    window.scrollTo({
+      top: 0,
+    });
+  }, []);
   return (
     <>
+      {showIframe && (
+        <Iframe setShowIframe={setShowIframe} iframeSrc={iframeSrc} />
+      )}
       <Head title="Publications | I-HART" />
       <Bannermain banner={blog} heading="Events" subheading="23 March 2023" />
       <div className="eventdetail__heading__col">
@@ -25,9 +40,10 @@ export default function EventDetails() {
           </a>
 
           <a
-            href="https://youtu.be/XMcab1MFaLc"
             className="eventdetail__heading__row"
-            target="_blank"
+            onClick={() =>
+              showIframeHandler("https://www.youtube.com/embed/7sDY4m8KNLc")
+            }
           >
             <div className="eventdetail__heading__row__img">
               <img src={video} alt="ppt" />
@@ -80,5 +96,51 @@ export default function EventDetails() {
         </div>
       </div>
     </>
+  );
+}
+
+function Iframe({ setShowIframe, iframeSrc }) {
+  useEffect(() => {
+    document.body.style.overflowY = "hidden";
+
+    return () => {
+      document.body.style.overflowY = "auto";
+    };
+  }, []);
+
+  return (
+    <div
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        backgroundColor: "rgba(0,0,0,.7)",
+        zIndex: 100,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <ClickAwayListener
+        onClickAway={() => {
+          setShowIframe(false);
+        }}
+      >
+        <iframe
+          style={{
+            width: "80%",
+            height: "80%",
+            border: "none",
+          }}
+          src={iframeSrc}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          loading="lazy"
+        />
+      </ClickAwayListener>
+    </div>
   );
 }
